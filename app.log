@@ -1,5 +1,26 @@
-2019-04-08 15:18:30.247  INFO 1295 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1295 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
-2019-04-08 15:18:30.250  INFO 1295 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
-2019-04-08 15:18:31.878  INFO 1295 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 1.954 seconds (JVM running for 7.924)
-2019-04-08 15:18:37.593  INFO 1295 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
-2019-04-08 15:18:37.594 ERROR 1295 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:22:27.864  INFO 1549 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1549 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:22:27.867  INFO 1549 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:22:29.511  INFO 1549 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 2.011 seconds (JVM running for 7.927)
+2019-04-08 16:22:34.175 ERROR 1549 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:22:34.176 ERROR 1549 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:22:34.176 ERROR 1549 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/appError
+2019-04-08 16:22:34.177 ERROR 1549 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：name -- 请求值：中文;
+2019-04-08 16:22:34.177 ERROR 1549 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：Request method 'GET' not supported
+2019-04-08 16:22:34.177 ERROR 1549 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:22:43.824  INFO 1549 --- [http-nio-8080-exec-4] c.e.s.HelloSpringBootController          : 请求参数 -- name：aa
+2019-04-08 16:22:43.824 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.HelloSpringBootController          : 抛出异常
+2019-04-08 16:22:43.825 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:22:43.825 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:22:43.825 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/appError
+2019-04-08 16:22:43.826 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：name -- 请求值：aa;
+2019-04-08 16:22:43.826 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：自定义异常
+2019-04-08 16:22:43.826 ERROR 1549 --- [http-nio-8080-exec-4] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:23:13.235  INFO 1549 --- [http-nio-8080-exec-5] c.e.s.HelloSpringBootController          : 请求参数 -- name：aa
+2019-04-08 16:23:13.236 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.HelloSpringBootController          : 抛出异常
+2019-04-08 16:23:13.237 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:23:13.238 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:23:13.239 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/appError
+2019-04-08 16:23:13.239 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：name -- 请求值：aa;
+2019-04-08 16:23:13.239 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：age -- 请求值：11;
+2019-04-08 16:23:13.240 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：自定义异常
+2019-04-08 16:23:13.240 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
