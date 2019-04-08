@@ -1,0 +1,5 @@
+2019-04-08 15:18:30.247  INFO 1295 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1295 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 15:18:30.250  INFO 1295 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 15:18:31.878  INFO 1295 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 1.954 seconds (JVM running for 7.924)
+2019-04-08 15:18:37.593  INFO 1295 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 15:18:37.594 ERROR 1295 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
