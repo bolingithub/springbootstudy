@@ -24,3 +24,180 @@
 2019-04-08 16:23:13.239 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：age -- 请求值：11;
 2019-04-08 16:23:13.240 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：自定义异常
 2019-04-08 16:23:13.240 ERROR 1549 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:43:59.872  INFO 1624 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1624 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:43:59.875  INFO 1624 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:44:01.652  INFO 1624 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 2.524 seconds (JVM running for 8.923)
+2019-04-08 16:44:03.651  INFO 1624 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : 请求参数 -- name：aa
+2019-04-08 16:44:03.651 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : 抛出异常
+2019-04-08 16:44:03.653 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:44:03.653 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:44:03.654 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/appError
+2019-04-08 16:44:03.654 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：name -- 请求值：aa;
+2019-04-08 16:44:03.654 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：age -- 请求值：11;
+2019-04-08 16:44:03.655 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：自定义异常
+2019-04-08 16:44:03.655 ERROR 1624 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:44:32.693  INFO 1634 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1634 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:44:32.694 DEBUG 1634 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:44:32.696  INFO 1634 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:44:34.062  INFO 1634 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 1.714 seconds (JVM running for 7.801)
+2019-04-08 16:53:08.575  INFO 1685 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1685 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:53:08.577 DEBUG 1685 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:53:08.578  INFO 1685 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:53:10.062  INFO 1685 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 1.835 seconds (JVM running for 7.692)
+2019-04-08 16:53:19.727 DEBUG 1685 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:53:42.500  INFO 1692 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1692 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:53:42.502 DEBUG 1692 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:53:42.503  INFO 1692 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:53:44.397  INFO 1692 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 2.278 seconds (JVM running for 8.282)
+2019-04-08 16:53:45.510 DEBUG 1692 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:53:45.525  INFO 1692 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : 请求参数 -- name：aa
+2019-04-08 16:53:45.525 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : 抛出异常
+2019-04-08 16:53:45.527 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:53:45.527 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:53:45.528 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/appError
+2019-04-08 16:53:45.528 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：name -- 请求值：aa;
+2019-04-08 16:53:45.528 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：age -- 请求值：11;
+2019-04-08 16:53:45.528 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：自定义异常
+2019-04-08 16:53:45.529 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:53:45.549 DEBUG 1692 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:54:11.279 DEBUG 1692 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:54:11.285 DEBUG 1692 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:54:11.285 DEBUG 1692 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:54:11.294 DEBUG 1692 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:54:11.329 DEBUG 1692 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:54:11.361 DEBUG 1692 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:54:32.337 DEBUG 1692 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:54:32.340 DEBUG 1692 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:54:32.340 DEBUG 1692 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:54:32.342 DEBUG 1692 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:54:32.351 DEBUG 1692 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:54:32.352 DEBUG 1692 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:54:41.114 DEBUG 1692 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:54:41.115  INFO 1692 --- [http-nio-8080-exec-6] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 16:54:41.116 ERROR 1692 --- [http-nio-8080-exec-6] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:54:41.126 DEBUG 1692 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:54:41.127 DEBUG 1692 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:54:49.617 DEBUG 1692 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:54:49.618  INFO 1692 --- [http-nio-8080-exec-8] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 16:54:49.618 ERROR 1692 --- [http-nio-8080-exec-8] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:54:49.620 DEBUG 1692 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:54:49.621 DEBUG 1692 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:55:03.132 DEBUG 1692 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:55:03.133  INFO 1692 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : 请求参数 -- name：aa
+2019-04-08 16:55:03.134 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : 抛出异常
+2019-04-08 16:55:03.134 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:55:03.135 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:55:03.135 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/appError
+2019-04-08 16:55:03.135 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：name -- 请求值：aa;
+2019-04-08 16:55:03.135 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：age -- 请求值：11;
+2019-04-08 16:55:03.135 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：自定义异常
+2019-04-08 16:55:03.135 ERROR 1692 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:55:03.138 DEBUG 1692 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:57:28.258  INFO 1721 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1721 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:57:28.262 DEBUG 1721 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:57:28.264  INFO 1721 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:57:30.396  INFO 1721 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 2.968 seconds (JVM running for 9.237)
+2019-04-08 16:57:33.951 DEBUG 1721 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:57:33.960  INFO 1721 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 16:57:33.961 ERROR 1721 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:57:33.983 DEBUG 1721 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:57:33.986 ERROR 1721 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:57:33.986 ERROR 1721 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:57:33.987 ERROR 1721 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/printLog
+2019-04-08 16:57:33.987 ERROR 1721 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：postHandle Exception
+2019-04-08 16:57:33.987 ERROR 1721 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:57:33.988 DEBUG 1721 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:57:34.863 DEBUG 1721 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:57:34.863  INFO 1721 --- [http-nio-8080-exec-3] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 16:57:34.863 ERROR 1721 --- [http-nio-8080-exec-3] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:57:34.865 DEBUG 1721 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:57:34.866 ERROR 1721 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:57:34.866 ERROR 1721 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:57:34.867 ERROR 1721 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/printLog
+2019-04-08 16:57:34.867 ERROR 1721 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：postHandle Exception
+2019-04-08 16:57:34.867 ERROR 1721 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:57:34.871 DEBUG 1721 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:57:42.159 DEBUG 1721 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : 开始preHandle
+2019-04-08 16:57:42.159  INFO 1721 --- [http-nio-8080-exec-5] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 16:57:42.159 ERROR 1721 --- [http-nio-8080-exec-5] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:57:42.161 DEBUG 1721 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:57:42.161 ERROR 1721 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:57:42.162 ERROR 1721 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:57:42.162 ERROR 1721 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/printLog
+2019-04-08 16:57:42.162 ERROR 1721 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：postHandle Exception
+2019-04-08 16:57:42.163 ERROR 1721 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:57:42.163 DEBUG 1721 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:58:19.084  INFO 1733 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1733 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:58:19.086 DEBUG 1733 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:58:19.087  INFO 1733 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:58:20.577  INFO 1733 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 1.85 seconds (JVM running for 7.65)
+2019-04-08 16:58:25.683 DEBUG 1733 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-08 16:58:25.688 ERROR 1733 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-08 16:58:25.689 ERROR 1733 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:58:25.690 ERROR 1733 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/printLog
+2019-04-08 16:58:25.691 ERROR 1733 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：preHandle Exception
+2019-04-08 16:58:25.692 ERROR 1733 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-08 16:58:58.316  INFO 1742 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1742 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:58:58.317 DEBUG 1742 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:58:58.318  INFO 1742 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:58:59.721  INFO 1742 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 1.736 seconds (JVM running for 7.542)
+2019-04-08 16:59:17.782  INFO 1748 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1748 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-08 16:59:17.784 DEBUG 1748 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-08 16:59:17.785  INFO 1748 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-08 16:59:19.549  INFO 1748 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 2.13 seconds (JVM running for 8.151)
+2019-04-08 16:59:22.161 DEBUG 1748 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-08 16:59:22.172  INFO 1748 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : info -- 用户请求打印日志
+2019-04-08 16:59:22.173 ERROR 1748 --- [http-nio-8080-exec-1] c.e.s.HelloSpringBootController          : error -- 用户请求打印日志
+2019-04-08 16:59:22.204 DEBUG 1748 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-08 16:59:22.205 DEBUG 1748 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-08 16:59:22.217 ERROR 1748 --- [http-nio-8080-exec-1] o.s.web.servlet.HandlerExecutionChain    : HandlerInterceptor.afterCompletion threw exception
+
+java.lang.Exception: afterCompletion Exception
+	at com.example.springbootstudy.UserInterceptor.afterCompletion(UserInterceptor.java:32) ~[classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:174) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1133) [spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055) [spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
