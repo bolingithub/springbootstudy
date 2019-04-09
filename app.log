@@ -201,3 +201,57 @@ java.lang.Exception: afterCompletion Exception
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
 	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
 
+2019-04-09 14:17:43.699  INFO 1415 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1415 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 14:17:43.702 DEBUG 1415 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 14:17:43.706  INFO 1415 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 14:17:55.887  INFO 1420 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1420 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 14:17:55.890 DEBUG 1420 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 14:17:55.891  INFO 1420 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 14:17:59.381  WARN 1420 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 14:17:59.595  INFO 1420 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.081 seconds (JVM running for 10.159)
+2019-04-09 14:18:10.634 DEBUG 1420 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:10.649 ERROR 1420 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 14:18:10.649 ERROR 1420 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 14:18:10.650 ERROR 1420 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 14:18:10.650 ERROR 1420 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：id -- 请求值：1666;
+2019-04-09 14:18:10.650 ERROR 1420 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：Required String parameter 'phone' is not present
+2019-04-09 14:18:10.650 ERROR 1420 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 14:18:10.671 DEBUG 1420 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:22.863 DEBUG 1420 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:22.871 ERROR 1420 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 14:18:22.872 ERROR 1420 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 14:18:22.872 ERROR 1420 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 14:18:22.873 ERROR 1420 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 14:18:22.873 ERROR 1420 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：Required String parameter 'nickname' is not present
+2019-04-09 14:18:22.873 ERROR 1420 --- [http-nio-8080-exec-3] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 14:18:22.878 DEBUG 1420 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:38.198 DEBUG 1420 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:38.295 DEBUG 1420 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:38.296 DEBUG 1420 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:45.182 DEBUG 1420 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:45.199 DEBUG 1420 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:45.200 DEBUG 1420 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:45.782 DEBUG 1420 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:45.799 DEBUG 1420 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:45.800 DEBUG 1420 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:46.053 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:46.066 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:46.067 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:46.206 DEBUG 1420 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:46.219 DEBUG 1420 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:46.220 DEBUG 1420 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:46.423 DEBUG 1420 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:46.435 DEBUG 1420 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:46.437 DEBUG 1420 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:18:46.550 DEBUG 1420 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:18:46.559 DEBUG 1420 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:18:46.559 DEBUG 1420 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:19:04.041 DEBUG 1420 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:19:04.048 DEBUG 1420 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:19:04.049 DEBUG 1420 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:19:04.059 DEBUG 1420 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:19:04.078 DEBUG 1420 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:19:04.093 DEBUG 1420 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 14:19:19.508 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 14:19:19.855 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 14:19:19.856 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : afterCompletion
