@@ -255,3 +255,246 @@ java.lang.Exception: afterCompletion Exception
 2019-04-09 14:19:19.508 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : preHandle
 2019-04-09 14:19:19.855 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : postHandle
 2019-04-09 14:19:19.856 DEBUG 1420 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:03:54.889  INFO 1526 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1526 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:03:54.891 DEBUG 1526 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:03:54.893  INFO 1526 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:03:58.584  WARN 1526 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:03:58.828  INFO 1526 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.304 seconds (JVM running for 10.373)
+2019-04-09 15:04:49.292  INFO 1530 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1530 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:04:49.294 DEBUG 1530 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:04:49.295  INFO 1530 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:04:52.222  WARN 1530 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:04:52.474  INFO 1530 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 3.495 seconds (JVM running for 9.424)
+2019-04-09 15:05:07.958 DEBUG 1530 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:05:07.966 DEBUG 1530 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 15:05:07.966 DEBUG 1530 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:05:07.976 DEBUG 1530 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:05:07.993 DEBUG 1530 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 15:05:08.005 DEBUG 1530 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:05:30.671 DEBUG 1530 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:05:30.827 DEBUG 1530 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 15:05:30.827 DEBUG 1530 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:05:55.241 DEBUG 1530 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:05:55.291 ERROR 1530 --- [http-nio-8080-exec-5] o.hibernate.id.enhanced.TableStructure   : could not read a hi value
+
+java.sql.SQLSyntaxErrorException: Table 'springbootstudy.hibernate_sequence' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:970) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1020) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.id.enhanced.TableStructure.executeQuery(TableStructure.java:216) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.id.enhanced.TableStructure.access$300(TableStructure.java:46) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:138) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:126) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:55) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:57) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.id.enhanced.TableStructure$1.getNextValue(TableStructure.java:125) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.id.enhanced.NoopOptimizer.generate(NoopOptimizer.java:40) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.generate(SequenceStyleGenerator.java:482) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:119) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:799) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:784) [hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy80.persist(Unknown Source) [na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:308) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy80.persist(Unknown Source) [na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:489) [spring-data-jpa-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) [spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) [spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) [spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) [spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) [spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) [spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:138) ~[spring-data-jpa-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy82.save(Unknown Source) ~[na:na]
+	at com.example.springbootstudy.HelloSpringBootController.saveUser(HelloSpringBootController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.base/java.lang.Thread.run(Thread.java:844) ~[na:na]
+
+2019-04-09 15:05:55.295  WARN 1530 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2019-04-09 15:05:55.296 ERROR 1530 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'springbootstudy.hibernate_sequence' doesn't exist
+2019-04-09 15:05:55.306 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 15:05:55.306 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:05:55.306 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 15:05:55.306 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 15:05:55.306 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：nickname -- 请求值：spring;
+2019-04-09 15:05:55.307 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：error performing isolated work; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: error performing isolated work
+2019-04-09 15:05:55.307 ERROR 1530 --- [http-nio-8080-exec-5] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:05:55.312 DEBUG 1530 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:06:52.094  INFO 1546 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1546 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:06:52.096 DEBUG 1546 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:06:52.097  INFO 1546 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:06:55.156  WARN 1546 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:06:55.413  INFO 1546 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 3.655 seconds (JVM running for 9.684)
+2019-04-09 15:07:20.565 DEBUG 1546 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:07:20.645  WARN 1546 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2019-04-09 15:07:20.647 ERROR 1546 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'create_time' cannot be null
+2019-04-09 15:07:20.658 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 15:07:20.659 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:07:20.659 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 15:07:20.659 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 15:07:20.660 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：nickname -- 请求值：spring;
+2019-04-09 15:07:20.660 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-04-09 15:07:20.660 ERROR 1546 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:07:20.681 DEBUG 1546 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:08:41.573  INFO 1565 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1565 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:08:41.575 DEBUG 1565 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:08:41.577  INFO 1565 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:08:45.106  WARN 1565 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:08:45.381  INFO 1565 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.133 seconds (JVM running for 10.209)
+2019-04-09 15:09:22.281 DEBUG 1565 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:09:22.355  WARN 1565 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2019-04-09 15:09:22.356 ERROR 1565 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'create_time' cannot be null
+2019-04-09 15:09:22.365 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 15:09:22.366 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:09:22.366 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 15:09:22.366 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 15:09:22.367 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：nickname -- 请求值：spring;
+2019-04-09 15:09:22.367 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-04-09 15:09:22.367 ERROR 1565 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:09:22.389 DEBUG 1565 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:11:28.586  INFO 1577 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1577 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:11:28.588 DEBUG 1577 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:11:28.592  INFO 1577 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:11:32.431  WARN 1577 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:11:32.753  INFO 1577 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.549 seconds (JVM running for 10.519)
+2019-04-09 15:11:48.002 DEBUG 1577 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:11:48.076  WARN 1577 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2019-04-09 15:11:48.077 ERROR 1577 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'create_time' cannot be null
+2019-04-09 15:11:48.086 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 15:11:48.086 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:11:48.087 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 15:11:48.087 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 15:11:48.087 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：nickname -- 请求值：spring;
+2019-04-09 15:11:48.088 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-04-09 15:11:48.088 ERROR 1577 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:11:48.108 DEBUG 1577 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:12:03.648  INFO 1580 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1580 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:12:03.650 DEBUG 1580 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:12:03.651  INFO 1580 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:12:06.499  WARN 1580 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:12:06.746  INFO 1580 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 3.409 seconds (JVM running for 9.63)
+2019-04-09 15:12:11.777 DEBUG 1580 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:12:11.853  WARN 1580 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2019-04-09 15:12:11.854 ERROR 1580 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'create_time' cannot be null
+2019-04-09 15:12:11.867 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 15:12:11.868 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:12:11.868 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 15:12:11.869 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 15:12:11.869 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：nickname -- 请求值：spring;
+2019-04-09 15:12:11.870 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-04-09 15:12:11.870 ERROR 1580 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:12:11.896 DEBUG 1580 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:12:27.905  INFO 1585 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1585 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:12:27.907 DEBUG 1585 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:12:27.908  INFO 1585 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:12:32.050  WARN 1585 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:12:32.298  INFO 1585 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.802 seconds (JVM running for 10.838)
+2019-04-09 15:15:55.123 DEBUG 1585 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:15:55.208  WARN 1585 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2019-04-09 15:15:55.209 ERROR 1585 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'create_time' cannot be null
+2019-04-09 15:15:55.221 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            :                               
+2019-04-09 15:15:55.222 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:15:55.222 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求地址：/helloSpringBoot/saveUser
+2019-04-09 15:15:55.223 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：phone -- 请求值：99;
+2019-04-09 15:15:55.224 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 请求参数：nickname -- 请求值：spring;
+2019-04-09 15:15:55.225 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : 系统异常 -- 具体错误：could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-04-09 15:15:55.225 ERROR 1585 --- [http-nio-8080-exec-1] c.e.s.ControllerAdviceHandler            : ------------------------------
+2019-04-09 15:15:55.256 DEBUG 1585 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:17:57.640  INFO 1607 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 1607 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-09 15:17:57.647 DEBUG 1607 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-09 15:17:57.648  INFO 1607 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-09 15:18:00.662  WARN 1607 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-09 15:18:00.912  INFO 1607 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 3.613 seconds (JVM running for 9.574)
+2019-04-09 15:18:07.575 DEBUG 1607 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:18:07.730 DEBUG 1607 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 15:18:07.731 DEBUG 1607 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-09 15:18:49.793 DEBUG 1607 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-09 15:18:50.009 DEBUG 1607 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-09 15:18:50.015 DEBUG 1607 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : afterCompletion
