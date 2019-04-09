@@ -19,7 +19,7 @@ public class ControllerAdviceHandler {
     @ExceptionHandler(value = Exception.class)
     public String errorHandler(HttpServletRequest request, Exception exception) {
         writeErrorLogToFile(request, exception);
-        return "系统异常";
+        return exception.getMessage();
     }
 
     // 将错误日志写到文件中

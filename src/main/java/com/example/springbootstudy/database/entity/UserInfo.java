@@ -1,18 +1,18 @@
-package com.example.springbootstudy.database;
+package com.example.springbootstudy.database.entity;
 
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-// spring jpa 中如何在插入和更新时使用数据库表的默认值 ：DynamicInsert / DynamicUpdate
 @Entity
 @DynamicInsert
 @DynamicUpdate
-public class Users {
+public class UserInfo {
 
-    // -AUTO主键由程序控制, 是默认选项 ,不设置就是这个
-    // -IDENTITY 主键由数据库生成, 采用数据库自增长, Oracle不支持这种方式
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
