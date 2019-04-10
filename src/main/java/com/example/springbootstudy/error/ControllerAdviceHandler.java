@@ -1,5 +1,8 @@
-package com.example.springbootstudy;
+package com.example.springbootstudy.error;
 
+import com.example.springbootstudy.controller.dto.ServiceResult;
+import com.example.springbootstudy.services.exception.ServiceException;
+import com.example.springbootstudy.services.exception.ServiceExceptionCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -17,9 +20,20 @@ public class ControllerAdviceHandler {
 
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
-    public String errorHandler(HttpServletRequest request, Exception exception) {
+    public ServiceResult<Void> errorHandler(HttpServletRequest request, Exception exception) {
+        // 将错误日志写到文件中
         writeErrorLogToFile(request, exception);
-        return exception.getMessage();
+
+        // 返回错误结果
+        ServiceResult<Void> serviceResult = new ServiceResult<>();
+        if (exception instanceof ServiceException) {
+            serviceResult.setCode(((ServiceException) exception).getCode());
+            serviceResult.setMessage(exception.getMessage());
+        } else {
+            serviceResult.setCode(ServiceExceptionCode.DEFAULT_ERROR);
+            serviceResult.setMessage(exception.getMessage());
+        }
+        return serviceResult;
     }
 
     // 将错误日志写到文件中
