@@ -7,7 +7,7 @@ import com.example.springbootstudy.services.exception.ServiceExceptionCode;
 
 public class DTOFactory {
 
-    public UserInfoDTO userInfo2DTO(UserInfo userInfo) throws ServiceException {
+    public static UserInfoDTO userInfo2DTO(UserInfo userInfo) throws ServiceException {
         try {
             UserInfoDTO userInfoDTO = new UserInfoDTO();
             String[] excludes = {"createTime", "updateTime"};

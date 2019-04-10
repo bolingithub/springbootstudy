@@ -1,8 +1,5 @@
 package com.example.springbootstudy.controller.utils;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -11,8 +8,6 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public final class BeanDataConverter {
-
-//    private static final Logger logger = LoggerFactory.getLogger(BeanDataConverter.class);
 
     /**
      * 数据转换工具，例如将entity转为dto
@@ -38,13 +33,11 @@ public final class BeanDataConverter {
 
             String methodName = method.getName();
 
-//            logger.info("methodName:" + methodName);
-            System.out.println("methodName:" + methodName);
-
             if (!methodName.startsWith("get") || "getClass".equals(methodName)
                     || excludes.contains(methodName.replaceFirst("get", "").toLowerCase())) {
                 continue;
             }
+
             Class<?> returnType = method.getReturnType();
             Object value = method.invoke(fromBean);
             String setMethodName = String.format("set%s", methodName.replaceFirst("get", ""));
