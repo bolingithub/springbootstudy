@@ -1,19 +1,25 @@
 package com.example.springbootstudy.services;
 
+import com.example.springbootstudy.database.entity.SmsCode;
 import com.example.springbootstudy.database.entity.UserAuths;
 import com.example.springbootstudy.database.entity.UserInfo;
 import com.example.springbootstudy.database.entity.UserLoginHistory;
+import com.example.springbootstudy.database.repository.SmsCodeRepository;
 import com.example.springbootstudy.database.repository.UserAuthsRepository;
 import com.example.springbootstudy.database.repository.UserInfoRepository;
 import com.example.springbootstudy.database.repository.UserLoginHistoryRepository;
 import com.example.springbootstudy.services.config.UserAuthType;
 import com.example.springbootstudy.error.exception.ServiceException;
 import com.example.springbootstudy.error.exception.ServiceExceptionCode;
+import com.example.springbootstudy.utils.RandomUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -29,6 +35,9 @@ public class UserService {
 
     @Autowired
     UserLoginHistoryRepository userLoginHistoryRepository;
+
+    @Autowired
+    SmsCodeRepository smsCodeRepository;
 
     /**
      * 用户通过手机号码登陆
@@ -64,4 +73,60 @@ public class UserService {
         userLoginHistoryRepository.save(userLoginHistory);
         return userInfo;
     }
+
+    /**
+     * 保存短信验证码
+     *
+     * @param phone
+     */
+    public String saveSmsCode(String phone) {
+        String ranCode = RandomUtil.make6IntString();
+        SmsCode smsCode = new SmsCode();
+        smsCode.setPhone(phone);
+        smsCode.setSmsCode(ranCode);
+        smsCode.setStatus(0);
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.MINUTE, 10);
+        java.sql.Timestamp expiryTime = new Timestamp(calendar.getTime().getTime());
+        smsCode.setExpiryTime(expiryTime);
+        smsCodeRepository.save(smsCode);
+        return ranCode;
+    }
+
+    /**
+     * 用户通过手机号+验证码注册
+     *
+     * @param phone
+     * @param smsCode
+     * @param password
+     * @throws ServiceException
+     */
+//    public void userRegisterByPhone(String phone, String smsCode, String password) throws ServiceException {
+//        List<SmsCode> smsCodeList = smsCodeRepository.findByPhoneAndStatus(phone, 0);
+//        boolean isCheckSuccess = false;
+//        for (SmsCode smsCodeItem : smsCodeList) {
+//            Date nowDate = new Date();
+//            long compareResult = nowDate.getTime() - smsCodeItem.getCreateTime().getTime();
+//            long compareMinute = compareResult / 1000 / 60;
+//            logger.debug("短信验证码过期时间：" + compareMinute);
+//            if (smsCodeItem.getSmsCode().equals(smsCode)) {
+//                // 短信验证码10分钟过期
+//                if (compareMinute > 10) {
+//                    throw new ServiceException(ServiceExceptionCode.SMS_CODE_EXPIRED, "短信验证码已过期");
+//                } else {
+//                    isCheckSuccess = true;
+//                    break;
+//                }
+//            }
+//        }
+//        if (!isCheckSuccess) {
+//            throw new ServiceException(ServiceExceptionCode.SMS_CODE_ERROR, "验证码错误，请重新输入");
+//        }
+//        // 短信验证码通过，将短信验证码改为已使用
+//        for (SmsCode smsCodeItem : smsCodeList) {
+//            smsCodeItem.setStatus(1);
+//        }
+//        smsCodeRepository.saveAll(smsCodeList);
+////        userInfoRepository.save()
+//    }
 }

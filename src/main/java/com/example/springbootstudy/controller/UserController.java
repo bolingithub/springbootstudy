@@ -5,6 +5,7 @@ import com.example.springbootstudy.controller.dto.DTOFactory;
 import com.example.springbootstudy.controller.dto.ServiceResult;
 import com.example.springbootstudy.controller.dto.UserInfoDTO;
 import com.example.springbootstudy.database.entity.UserInfo;
+import com.example.springbootstudy.error.exception.ServiceExceptionCode;
 import com.example.springbootstudy.services.UserService;
 import com.example.springbootstudy.error.exception.ServiceException;
 import org.slf4j.Logger;
@@ -31,4 +32,19 @@ public class UserController {
         UserInfo userInfo = userService.userLoginByPhone(phone, password, loginIp);
         return new ServiceResult<>(0, SUCCESS, DTOFactory.userInfo2DTO(userInfo));
     }
+
+    @GetMapping("sendSmsCode")
+    public ServiceResult<String> sendSmsCode(@RequestParam String phone) throws ServiceException {
+        if (phone.length() != 11) {
+            throw new ServiceException(ServiceExceptionCode.PARAMS_ERROR, "手机格式不正确，请重新输入");
+        }
+        String smsCode = userService.saveSmsCode(phone);
+        return new ServiceResult<>(0, SUCCESS, smsCode);
+    }
+
+//    @GetMapping("userRegister")
+//    public ServiceResult<Void> register(@RequestParam String phone, @RequestParam String smsCode, @RequestParam String password) throws ServiceException {
+//        userService.userRegisterByPhone(phone, smsCode, password);
+//        return new ServiceResult<>(0, SUCCESS, null);
+//    }
 }
