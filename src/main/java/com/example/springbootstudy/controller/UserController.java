@@ -6,7 +6,7 @@ import com.example.springbootstudy.controller.dto.ServiceResult;
 import com.example.springbootstudy.controller.dto.UserInfoDTO;
 import com.example.springbootstudy.database.entity.UserInfo;
 import com.example.springbootstudy.services.UserService;
-import com.example.springbootstudy.services.exception.ServiceException;
+import com.example.springbootstudy.error.exception.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

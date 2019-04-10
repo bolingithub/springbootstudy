@@ -2,8 +2,8 @@ package com.example.springbootstudy.controller.dto;
 
 import com.example.springbootstudy.controller.utils.BeanDataConverter;
 import com.example.springbootstudy.database.entity.UserInfo;
-import com.example.springbootstudy.services.exception.ServiceException;
-import com.example.springbootstudy.services.exception.ServiceExceptionCode;
+import com.example.springbootstudy.error.exception.ServiceException;
+import com.example.springbootstudy.error.exception.ServiceExceptionCode;
 
 public class DTOFactory {
 

@@ -1,4 +1,4 @@
-package com.example.springbootstudy.services.exception;
+package com.example.springbootstudy.error.exception;
 
 /**
  * 服务错误代码

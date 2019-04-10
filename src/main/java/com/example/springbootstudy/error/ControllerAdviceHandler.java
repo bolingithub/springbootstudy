@@ -1,8 +1,8 @@
 package com.example.springbootstudy.error;
 
 import com.example.springbootstudy.controller.dto.ServiceResult;
-import com.example.springbootstudy.services.exception.ServiceException;
-import com.example.springbootstudy.services.exception.ServiceExceptionCode;
+import com.example.springbootstudy.error.exception.ServiceException;
+import com.example.springbootstudy.error.exception.ServiceExceptionCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
