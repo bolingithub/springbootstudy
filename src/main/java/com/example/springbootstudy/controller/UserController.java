@@ -1,6 +1,9 @@
 package com.example.springbootstudy.controller;
 
 import com.example.springbootstudy.HelloSpringBootController;
+import com.example.springbootstudy.controller.dto.DTOFactory;
+import com.example.springbootstudy.controller.dto.UserInfoDTO;
+import com.example.springbootstudy.database.entity.UserInfo;
 import com.example.springbootstudy.services.UserService;
 import com.example.springbootstudy.services.exception.ServiceException;
 import org.slf4j.Logger;
@@ -21,8 +24,8 @@ public class UserController {
     UserService userService;
 
     @GetMapping("userLogin")
-    public String login(@RequestParam String phone, @RequestParam String password) throws ServiceException {
-        userService.UserLogin(phone, password);
-        return "Success";
+    public UserInfoDTO login(@RequestParam String phone, @RequestParam String password, String loginIp) throws ServiceException {
+        UserInfo userInfo = userService.userLoginByPhone(phone, password, loginIp);
+        return new DTOFactory().userInfo2DTO(userInfo);
     }
 }

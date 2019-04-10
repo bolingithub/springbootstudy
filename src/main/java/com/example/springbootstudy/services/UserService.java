@@ -1,6 +1,8 @@
 package com.example.springbootstudy.services;
 
 import com.example.springbootstudy.database.entity.UserAuths;
+import com.example.springbootstudy.database.entity.UserInfo;
+import com.example.springbootstudy.database.entity.UserLoginHistory;
 import com.example.springbootstudy.database.repository.UserAuthsRepository;
 import com.example.springbootstudy.database.repository.UserInfoRepository;
 import com.example.springbootstudy.database.repository.UserLoginHistoryRepository;
@@ -28,7 +30,16 @@ public class UserService {
     @Autowired
     UserLoginHistoryRepository userLoginHistoryRepository;
 
-    public void UserLogin(String phone, String password) throws ServiceException {
+    /**
+     * 用户通过手机号码登陆
+     *
+     * @param phone
+     * @param password
+     * @param loginIp
+     * @return
+     * @throws ServiceException
+     */
+    public UserInfo userLoginByPhone(String phone, String password, String loginIp) throws ServiceException {
         List<UserAuths> userAuthsList = userAuthsRepository.findByIdentityTypeAndIdentifierAndCredential(UserAuthType.PHONE.getAuthType(), phone, password);
         if (userAuthsList.isEmpty()) {
             boolean isExist = userAuthsRepository.existsByIdentityTypeAndIdentifier(UserAuthType.PHONE.getAuthType(), phone);
@@ -41,5 +52,16 @@ public class UserService {
         if (userAuthsList.size() > 1) {
             throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，存在多个认证信息");
         }
+        UserAuths userAuths = userAuthsList.get(0);
+        UserInfo userInfo = userInfoRepository.findById(userAuths.getId()).orElse(null);
+        if (userInfo == null) {
+            throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，未找到相关的用户信息");
+        }
+        // 写入登陆历史记录
+        UserLoginHistory userLoginHistory = new UserLoginHistory();
+        userLoginHistory.setUserId(userInfo.getId());
+        userLoginHistory.setLoginIp(loginIp);
+        userLoginHistoryRepository.save(userLoginHistory);
+        return userInfo;
     }
 }

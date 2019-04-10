@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface UserAuthsRepository extends CrudRepository<UserAuths, Integer> {
+public interface UserAuthsRepository extends CrudRepository<UserAuths, Long> {
 
     /**
      * 通过认证类型找到匹配的用户认证信息
