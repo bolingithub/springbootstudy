@@ -12,6 +12,7 @@ import com.example.springbootstudy.services.config.UserAuthType;
 import com.example.springbootstudy.error.exception.ServiceException;
 import com.example.springbootstudy.error.exception.ServiceExceptionCode;
 import com.example.springbootstudy.utils.RandomUtil;
+import com.example.springbootstudy.utils.UserIdMaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,13 +63,15 @@ public class UserService {
             throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，存在多个认证信息");
         }
         UserAuths userAuths = userAuthsList.get(0);
-        UserInfo userInfo = userInfoRepository.findById(userAuths.getId()).orElse(null);
-        if (userInfo == null) {
-            throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，未找到相关的用户信息");
+        List<UserInfo> userInfoList = userInfoRepository.findByUserId(userAuths.getUserId());
+        if (userInfoList.size() != 1) {
+            logger.error("用户信息错误，可能存在多个用户信息：" + userInfoList.size());
+            throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，用户信息错误");
         }
+        UserInfo userInfo = userInfoList.get(0);
         // 写入登陆历史记录
         UserLoginHistory userLoginHistory = new UserLoginHistory();
-        userLoginHistory.setUserId(userInfo.getId());
+        userLoginHistory.setUserId(userInfo.getUserId());
         userLoginHistory.setLoginIp(loginIp);
         userLoginHistoryRepository.save(userLoginHistory);
         return userInfo;
@@ -101,32 +104,43 @@ public class UserService {
      * @param password
      * @throws ServiceException
      */
-//    public void userRegisterByPhone(String phone, String smsCode, String password) throws ServiceException {
-//        List<SmsCode> smsCodeList = smsCodeRepository.findByPhoneAndStatus(phone, 0);
-//        boolean isCheckSuccess = false;
-//        for (SmsCode smsCodeItem : smsCodeList) {
-//            Date nowDate = new Date();
-//            long compareResult = nowDate.getTime() - smsCodeItem.getCreateTime().getTime();
-//            long compareMinute = compareResult / 1000 / 60;
-//            logger.debug("短信验证码过期时间：" + compareMinute);
-//            if (smsCodeItem.getSmsCode().equals(smsCode)) {
-//                // 短信验证码10分钟过期
-//                if (compareMinute > 10) {
-//                    throw new ServiceException(ServiceExceptionCode.SMS_CODE_EXPIRED, "短信验证码已过期");
-//                } else {
-//                    isCheckSuccess = true;
-//                    break;
-//                }
-//            }
-//        }
-//        if (!isCheckSuccess) {
-//            throw new ServiceException(ServiceExceptionCode.SMS_CODE_ERROR, "验证码错误，请重新输入");
-//        }
-//        // 短信验证码通过，将短信验证码改为已使用
-//        for (SmsCode smsCodeItem : smsCodeList) {
-//            smsCodeItem.setStatus(1);
-//        }
-//        smsCodeRepository.saveAll(smsCodeList);
-////        userInfoRepository.save()
-//    }
+    public void userRegisterByPhone(String phone, String smsCode, String password) throws ServiceException {
+        List<SmsCode> smsCodeList = smsCodeRepository.findByPhoneAndStatus(phone, 0);
+        boolean isCheckSuccess = false;
+        for (SmsCode smsCodeItem : smsCodeList) {
+            if (smsCodeItem.getSmsCode().equals(smsCode)) {
+                Date nowDate = new Date();
+                int compareResult = nowDate.compareTo(smsCodeItem.getExpiryTime());
+                logger.debug("短信验证码过期时间：" + compareResult);
+                // 短信验证码10分钟过期
+                if (compareResult > 0) {
+                    throw new ServiceException(ServiceExceptionCode.SMS_CODE_EXPIRED, "短信验证码已过期");
+                } else {
+                    isCheckSuccess = true;
+                    break;
+                }
+            }
+        }
+        if (!isCheckSuccess) {
+            throw new ServiceException(ServiceExceptionCode.SMS_CODE_ERROR, "验证码错误，请重新输入");
+        }
+        // 短信验证码通过，将短信验证码改为已使用
+        for (SmsCode smsCodeItem : smsCodeList) {
+            smsCodeItem.setStatus(1);
+        }
+        smsCodeRepository.saveAll(smsCodeList);
+        // 保存用户信息
+        String userId = UserIdMaker.makeUserId();
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUserId(userId);
+        userInfo.setPhone(phone);
+        userInfoRepository.save(userInfo);
+        // 保存认证信息
+        UserAuths userAuths = new UserAuths();
+        userAuths.setUserId(userId);
+        userAuths.setIdentityType(UserAuthType.PHONE.getAuthType());
+        userAuths.setIdentifier(phone);
+        userAuths.setCredential(password);
+        userAuthsRepository.save(userAuths);
+    }
 }

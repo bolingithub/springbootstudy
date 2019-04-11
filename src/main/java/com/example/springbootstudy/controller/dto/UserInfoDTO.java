@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class UserInfoDTO {
-    private long id;
+    private String userId;
     private String phone;
     private String nickname;
     private String personalSign;

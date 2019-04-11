@@ -42,9 +42,9 @@ public class UserController {
         return new ServiceResult<>(0, SUCCESS, smsCode);
     }
 
-//    @GetMapping("userRegister")
-//    public ServiceResult<Void> register(@RequestParam String phone, @RequestParam String smsCode, @RequestParam String password) throws ServiceException {
-//        userService.userRegisterByPhone(phone, smsCode, password);
-//        return new ServiceResult<>(0, SUCCESS, null);
-//    }
+    @GetMapping("userRegister")
+    public ServiceResult<Void> register(@RequestParam String phone, @RequestParam String smsCode, @RequestParam String password) throws ServiceException {
+        userService.userRegisterByPhone(phone, smsCode, password);
+        return new ServiceResult<>(0, SUCCESS, null);
+    }
 }
