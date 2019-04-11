@@ -687,3 +687,108 @@
 2019-04-11 14:17:16.998 ERROR 31560 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：验证码错误，请重新输入
 2019-04-11 14:17:16.999 ERROR 31560 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
 2019-04-11 14:17:17.002 DEBUG 31560 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:19:00.976 DEBUG 31560 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:19:00.983 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 14:19:00.983 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:19:00.984 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 14:19:00.984 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 14:19:00.984 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：925597;
+2019-04-11 14:19:00.984 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 14:19:00.985 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：验证码错误，请重新输入
+2019-04-11 14:19:00.985 ERROR 31560 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:19:00.987 DEBUG 31560 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:19:01.281 DEBUG 31560 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:19:01.285 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：925597;
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：验证码错误，请重新输入
+2019-04-11 14:19:01.286 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:19:01.289 DEBUG 31560 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:19:03.691 DEBUG 31560 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:19:03.737 DEBUG 31560 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:19:03.738 DEBUG 31560 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:20:01.354 DEBUG 31560 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:20:01.450 DEBUG 31560 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:20:01.451 DEBUG 31560 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:20:09.208 DEBUG 31560 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:20:09.214 DEBUG 31560 --- [http-nio-8080-exec-4] c.e.s.services.UserService               : 短信验证码过期时间：-1
+2019-04-11 14:20:09.303 DEBUG 31560 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:20:09.304 DEBUG 31560 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:20:12.758 DEBUG 31560 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:20:12.791 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 14:20:12.791 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:20:12.791 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 14:20:12.792 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 14:20:12.792 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：739201;
+2019-04-11 14:20:12.792 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 14:20:12.792 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：系统错误，数据格式转换错误
+2019-04-11 14:20:12.792 ERROR 31560 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:20:12.793 DEBUG 31560 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:21:30.955 DEBUG 31560 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:21:31.058 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 14:21:31.058 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:21:31.058 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 14:21:31.058 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 14:21:31.058 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：739201;
+2019-04-11 14:21:31.058 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 14:21:31.059 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：系统错误，数据格式转换错误
+2019-04-11 14:21:31.059 ERROR 31560 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:21:31.060 DEBUG 31560 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:28:02.787  INFO 32570 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 32570 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 14:28:02.789 DEBUG 32570 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 14:28:02.790  INFO 32570 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 14:28:08.147  WARN 32570 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 14:28:08.515  INFO 32570 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 6.161 seconds (JVM running for 12.252)
+2019-04-11 14:40:58.519 DEBUG 32570 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:40:58.728 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.controller.dto.DTOFactory          : 数据转换错误：com.example.springbootstudy.controller.dto.UserInfoDTO.setId(long)
+2019-04-11 14:40:58.733 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 14:40:58.733 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:40:58.733 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 14:40:58.733 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 14:40:58.733 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：739201;
+2019-04-11 14:40:58.734 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 14:40:58.734 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：系统错误，数据格式转换错误
+2019-04-11 14:40:58.734 ERROR 32570 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:40:58.799 DEBUG 32570 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:43:51.879  INFO 33926 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 33926 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 14:43:51.884 DEBUG 33926 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 14:43:51.885  INFO 33926 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 14:43:56.217  WARN 33926 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 14:43:56.439  INFO 33926 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.468 seconds (JVM running for 11.287)
+2019-04-11 14:44:03.924 DEBUG 33926 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:44:04.172 DEBUG 33926 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getId
+2019-04-11 14:44:04.172 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.controller.dto.DTOFactory          : 数据转换错误：com.example.springbootstudy.controller.dto.UserInfoDTO.setId(long)
+2019-04-11 14:44:04.174 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 14:44:04.175 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:44:04.175 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 14:44:04.175 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 14:44:04.175 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：739201;
+2019-04-11 14:44:04.176 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 14:44:04.176 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：系统错误，数据格式转换错误
+2019-04-11 14:44:04.176 ERROR 33926 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 14:44:04.251 DEBUG 33926 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:45:36.260  INFO 34078 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 34078 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 14:45:36.264 DEBUG 34078 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 14:45:36.265  INFO 34078 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 14:45:40.215  WARN 34078 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 14:45:40.510  INFO 34078 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.744 seconds (JVM running for 10.898)
+2019-04-11 14:45:51.042 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:45:51.258 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getRealName
+2019-04-11 14:45:51.259 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setRealName(java.lang.String)
+2019-04-11 14:45:51.259 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getPhone
+2019-04-11 14:45:51.259 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setPhone(java.lang.String)
+2019-04-11 14:45:51.260 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getUserId
+2019-04-11 14:45:51.260 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setUserId(java.lang.String)
+2019-04-11 14:45:51.260 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getNickname
+2019-04-11 14:45:51.260 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setNickname(java.lang.String)
+2019-04-11 14:45:51.261 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getPersonalSign
+2019-04-11 14:45:51.261 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setPersonalSign(java.lang.String)
+2019-04-11 14:45:51.261 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getSex
+2019-04-11 14:45:51.261 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setSex(java.lang.String)
+2019-04-11 14:45:51.262 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : methodName:getPersonalId
+2019-04-11 14:45:51.262 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setPersonalId(java.lang.String)
+2019-04-11 14:45:51.337 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:45:51.337 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
