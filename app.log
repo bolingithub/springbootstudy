@@ -885,3 +885,77 @@
 2019-04-11 15:13:30.301  INFO 36531 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
 2019-04-11 15:13:36.801  WARN 36531 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-04-11 15:13:37.109  INFO 36531 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 7.641 seconds (JVM running for 14.003)
+2019-04-11 15:13:47.692 DEBUG 36531 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:13:47.829 ERROR 36531 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:13:47.829 ERROR 36531 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:13:47.830 ERROR 36531 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/sendSmsCode
+2019-04-11 15:13:47.830 ERROR 36531 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:13:47.830 ERROR 36531 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:13:47.830 ERROR 36531 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:13:47.888 DEBUG 36531 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:13:53.964 DEBUG 36531 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:13:53.971 ERROR 36531 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:13:53.972 ERROR 36531 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:13:53.972 ERROR 36531 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/sendSmsCode
+2019-04-11 15:13:53.973 ERROR 36531 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:13:53.973 ERROR 36531 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:13:53.974 ERROR 36531 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:13:53.980 DEBUG 36531 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:13:56.738 DEBUG 36531 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:13:56.890 DEBUG 36531 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:13:56.891 DEBUG 36531 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:14:04.010 DEBUG 36531 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:14:04.017 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:14:04.018 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:14:04.018 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:14:04.019 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:14:04.019 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：619742;
+2019-04-11 15:14:04.020 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:14:04.020 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:14:04.021 ERROR 36531 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:14:04.024 DEBUG 36531 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:14:06.526 DEBUG 36531 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:14:06.530 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:14:06.531 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:14:06.532 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:14:06.532 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:14:06.533 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：619742;
+2019-04-11 15:14:06.533 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:14:06.533 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:14:06.534 ERROR 36531 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:14:06.537 DEBUG 36531 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:14:09.440 DEBUG 36531 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:14:09.465 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:14:09.465 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:14:09.465 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:14:09.465 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042554;
+2019-04-11 15:14:09.466 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：619742;
+2019-04-11 15:14:09.466 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:14:09.466 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Parameter value [0] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [0] did not match expected type [java.lang.Long (n/a)]
+2019-04-11 15:14:09.466 ERROR 36531 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:14:09.468 DEBUG 36531 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:16:26.341  INFO 36803 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 36803 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 15:16:26.344 DEBUG 36803 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 15:16:26.345  INFO 36803 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 15:16:30.124  WARN 36803 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 15:16:30.457  INFO 36803 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.456 seconds (JVM running for 10.663)
+2019-04-11 15:16:33.817 DEBUG 36803 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:16:33.963 DEBUG 36803 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 短信验证码过期时间：-1
+2019-04-11 15:16:34.162 DEBUG 36803 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:16:34.164 DEBUG 36803 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:16:35.911 DEBUG 36803 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:16:35.919 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:16:35.919 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:16:35.919 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:16:35.920 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042554;
+2019-04-11 15:16:35.920 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：619742;
+2019-04-11 15:16:35.920 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:16:35.921 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:16:35.921 ERROR 36803 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:16:35.924 DEBUG 36803 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:16:38.499 DEBUG 36803 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:16:38.621 DEBUG 36803 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:16:38.622 DEBUG 36803 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:16:39.819 DEBUG 36803 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:16:39.859 DEBUG 36803 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:16:39.859 DEBUG 36803 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : afterCompletion
