@@ -16,7 +16,7 @@ public class UserAuths {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long userId;
+    private String userId;
     private String identityType;
     private String identifier;
     private String credential;
@@ -33,11 +33,11 @@ public class UserAuths {
     }
 
 
-    public long getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

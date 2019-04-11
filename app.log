@@ -1,0 +1,68 @@
+2019-04-11 10:49:55.446  INFO 18806 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 18806 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 10:49:55.448 DEBUG 18806 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 10:49:55.449  INFO 18806 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 10:49:59.683  WARN 18806 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 10:50:00.000  INFO 18806 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.957 seconds (JVM running for 11.143)
+2019-04-11 10:50:03.474 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 10:50:03.475 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 10:50:03.475 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 10:50:03.475 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：12;
+2019-04-11 10:50:03.475 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：99;
+2019-04-11 10:50:03.475 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Request method 'POST' not supported
+2019-04-11 10:50:03.476 ERROR 18806 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 10:50:39.009  INFO 18875 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 18875 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 10:50:39.011 DEBUG 18875 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 10:50:39.012  INFO 18875 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 10:50:43.086  WARN 18875 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 10:50:43.335  INFO 18875 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.71 seconds (JVM running for 10.618)
+2019-04-11 10:50:46.866 DEBUG 18875 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 10:50:47.043 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 10:50:47.043 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 10:50:47.043 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 10:50:47.043 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：12;
+2019-04-11 10:50:47.043 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：99;
+2019-04-11 10:50:47.044 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号尚未注册，请先注册
+2019-04-11 10:50:47.044 ERROR 18875 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 10:50:47.109 DEBUG 18875 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 10:59:54.681  INFO 19731 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 19731 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 10:59:54.684 DEBUG 19731 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 10:59:54.685  INFO 19731 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 10:59:58.656  WARN 19731 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 10:59:58.945  INFO 19731 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.635 seconds (JVM running for 10.541)
+2019-04-11 11:00:00.783 DEBUG 19731 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 11:00:00.808 ERROR 19731 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 11:00:00.809 ERROR 19731 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:00.809 ERROR 19731 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 11:00:00.810 ERROR 19731 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Required String parameter 'phone' is not present
+2019-04-11 11:00:00.810 ERROR 19731 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:00.883 DEBUG 19731 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 11:00:25.865 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 11:00:25.871 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:25.872 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 11:00:25.873 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：12;
+2019-04-11 11:00:25.874 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：99;
+2019-04-11 11:00:25.874 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Request method 'GET' not supported
+2019-04-11 11:00:25.875 ERROR 19731 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:38.238 DEBUG 19731 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 11:00:38.510 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 11:00:38.511 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:38.511 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 11:00:38.511 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：12;
+2019-04-11 11:00:38.511 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：99;
+2019-04-11 11:00:38.511 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号尚未注册，请先注册
+2019-04-11 11:00:38.511 ERROR 19731 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:38.513 DEBUG 19731 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 11:00:41.210 DEBUG 19731 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 11:00:41.218 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 11:00:41.219 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:41.219 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 11:00:41.220 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：12;
+2019-04-11 11:00:41.220 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：99;
+2019-04-11 11:00:41.220 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号尚未注册，请先注册
+2019-04-11 11:00:41.220 ERROR 19731 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 11:00:41.222 DEBUG 19731 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 11:01:13.195  INFO 19961 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 19961 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 11:01:13.198 DEBUG 19961 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 11:01:13.199  INFO 19961 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 11:01:17.700  WARN 19961 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 11:01:18.134  INFO 19961 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.861 seconds (JVM running for 13.385)

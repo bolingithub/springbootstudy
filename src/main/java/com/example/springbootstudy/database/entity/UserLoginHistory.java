@@ -16,7 +16,7 @@ public class UserLoginHistory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long userId;
+    private String userId;
     private java.sql.Timestamp loginTime;
     private String loginIp;
     private java.sql.Timestamp careteTime;
@@ -31,11 +31,11 @@ public class UserLoginHistory {
     }
 
 
-    public long getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
