@@ -8,6 +8,7 @@ import com.example.springbootstudy.database.repository.SmsCodeRepository;
 import com.example.springbootstudy.database.repository.UserAuthsRepository;
 import com.example.springbootstudy.database.repository.UserInfoRepository;
 import com.example.springbootstudy.database.repository.UserLoginHistoryRepository;
+import com.example.springbootstudy.services.config.SmsCodeType;
 import com.example.springbootstudy.services.config.UserAuthType;
 import com.example.springbootstudy.error.exception.ServiceException;
 import com.example.springbootstudy.error.exception.ServiceExceptionCode;
@@ -78,22 +79,18 @@ public class UserService {
     }
 
     /**
-     * 保存短信验证码
+     * 发送注册验证码
      *
      * @param phone
+     * @return
+     * @throws ServiceException
      */
-    public String saveSmsCode(String phone) {
-        String ranCode = RandomUtil.make6IntString();
-        SmsCode smsCode = new SmsCode();
-        smsCode.setPhone(phone);
-        smsCode.setSmsCode(ranCode);
-        smsCode.setStatus(0);
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.MINUTE, 10);
-        java.sql.Timestamp expiryTime = new Timestamp(calendar.getTime().getTime());
-        smsCode.setExpiryTime(expiryTime);
-        smsCodeRepository.save(smsCode);
-        return ranCode;
+    public String sendRegisterSmsCode(String phone) throws ServiceException {
+        boolean isExist = userAuthsRepository.countByIdentityTypeAndIdentifier(UserAuthType.PHONE.getAuthType(), phone) != 0;
+        if (isExist) {
+            throw new ServiceException(ServiceExceptionCode.USER_PHONE_HAVE_EXIST, "当前手机号已经注册");
+        }
+        return saveSmsCode(phone);
     }
 
     /**
@@ -105,7 +102,11 @@ public class UserService {
      * @throws ServiceException
      */
     public void userRegisterByPhone(String phone, String smsCode, String password) throws ServiceException {
-        List<SmsCode> smsCodeList = smsCodeRepository.findByPhoneAndStatus(phone, 0);
+        boolean isExist = userAuthsRepository.countByIdentityTypeAndIdentifier(UserAuthType.PHONE.getAuthType(), phone) != 0;
+        if (isExist) {
+            throw new ServiceException(ServiceExceptionCode.USER_PHONE_HAVE_EXIST, "当前手机号已经注册");
+        }
+        List<SmsCode> smsCodeList = smsCodeRepository.findByPhoneAndTypeAndStatus(phone, SmsCodeType.REGISTER.getType(), 0);
         boolean isCheckSuccess = false;
         for (SmsCode smsCodeItem : smsCodeList) {
             if (smsCodeItem.getSmsCode().equals(smsCode)) {
@@ -142,5 +143,24 @@ public class UserService {
         userAuths.setIdentifier(phone);
         userAuths.setCredential(password);
         userAuthsRepository.save(userAuths);
+    }
+
+    /**
+     * 保存短信验证码
+     *
+     * @param phone
+     */
+    private String saveSmsCode(String phone) {
+        String ranCode = RandomUtil.make6IntString();
+        SmsCode smsCode = new SmsCode();
+        smsCode.setPhone(phone);
+        smsCode.setSmsCode(ranCode);
+        smsCode.setStatus(0);
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.MINUTE, 10);
+        java.sql.Timestamp expiryTime = new Timestamp(calendar.getTime().getTime());
+        smsCode.setExpiryTime(expiryTime);
+        smsCodeRepository.save(smsCode);
+        return ranCode;
     }
 }

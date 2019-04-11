@@ -18,6 +18,7 @@ public class SmsCode {
     private long id;
     private String phone;
     private String smsCode;
+    private long type;
     private java.sql.Timestamp expiryTime;
     private long status;
     private java.sql.Timestamp createTime;
@@ -47,6 +48,15 @@ public class SmsCode {
 
     public void setSmsCode(String smsCode) {
         this.smsCode = smsCode;
+    }
+
+
+    public long getType() {
+        return type;
+    }
+
+    public void setType(long type) {
+        this.type = type;
     }
 
 

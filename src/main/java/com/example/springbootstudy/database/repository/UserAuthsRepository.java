@@ -18,6 +18,15 @@ public interface UserAuthsRepository extends CrudRepository<UserAuths, Long> {
     List<UserAuths> findByIdentityTypeAndIdentifierAndCredential(String identityType, String identifier, String credential);
 
     /**
+     * 判断是否已存在匹配信息
+     *
+     * @param identityType
+     * @param identifier
+     * @return
+     */
+    int countByIdentityTypeAndIdentifier(String identityType, String identifier);
+
+    /**
      * 判断这种认证类型的用户信息是否存在
      *
      * @param identityType 认证类型

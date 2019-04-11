@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface SmsCodeRepository extends CrudRepository<SmsCode, Long> {
 
-    List<SmsCode> findByPhoneAndStatus(String phone, long status);
+    List<SmsCode> findByPhoneAndTypeAndStatus(String phone, int type, long status);
 
 }

@@ -1,6 +1,5 @@
 package com.example.springbootstudy.controller;
 
-import com.example.springbootstudy.HelloSpringBootController;
 import com.example.springbootstudy.controller.dto.DTOFactory;
 import com.example.springbootstudy.controller.dto.ServiceResult;
 import com.example.springbootstudy.controller.dto.UserInfoDTO;
@@ -37,7 +36,7 @@ public class UserController {
     @GetMapping("sendSmsCode")
     public ServiceResult<String> sendSmsCode(@RequestParam String phone) throws ServiceException {
         checkoutPhone(phone);
-        String smsCode = userService.saveSmsCode(phone);
+        String smsCode = userService.sendRegisterSmsCode(phone);
         return new ServiceResult<>(0, SUCCESS, smsCode);
     }
 

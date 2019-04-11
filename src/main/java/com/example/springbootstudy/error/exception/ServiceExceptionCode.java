@@ -28,4 +28,8 @@ public class ServiceExceptionCode {
      * 短信验证码已过期
      */
     public static final int SMS_CODE_EXPIRED = 10005;
+    /**
+     * 当前注册手机号已经存在
+     */
+    public static final int USER_PHONE_HAVE_EXIST = 10006;
 }

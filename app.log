@@ -792,3 +792,96 @@
 2019-04-11 14:45:51.262 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.s.c.utils.BeanDataConverter          : setMethod:public void com.example.springbootstudy.controller.dto.UserInfoDTO.setPersonalId(java.lang.String)
 2019-04-11 14:45:51.337 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
 2019-04-11 14:45:51.337 DEBUG 34078 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:46:28.476  INFO 34159 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 34159 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 14:46:28.478 DEBUG 34159 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 14:46:28.480  INFO 34159 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 14:46:32.139  WARN 34159 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 14:46:32.398  INFO 34159 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.261 seconds (JVM running for 10.477)
+2019-04-11 14:53:03.668 DEBUG 34159 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:53:04.020 DEBUG 34159 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:53:04.021 DEBUG 34159 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:53:04.963 DEBUG 34159 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:53:05.073 DEBUG 34159 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:53:05.074 DEBUG 34159 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:53:06.763 DEBUG 34159 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:53:06.820 DEBUG 34159 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:53:06.821 DEBUG 34159 --- [http-nio-8080-exec-5] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 14:53:11.771 DEBUG 34159 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 14:53:11.856 DEBUG 34159 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 14:53:11.856 DEBUG 34159 --- [http-nio-8080-exec-7] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:01:37.464  INFO 35466 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 35466 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 15:01:37.466 DEBUG 35466 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 15:01:37.467  INFO 35466 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 15:01:41.300  WARN 35466 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 15:01:41.543  INFO 35466 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.486 seconds (JVM running for 10.466)
+2019-04-11 15:01:50.815 DEBUG 35466 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:01:50.961 DEBUG 35466 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:01:50.962 DEBUG 35466 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:01:56.750 DEBUG 35466 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:01:56.909 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:01:56.910 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:01:56.910 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:01:56.911 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-11 15:01:56.911 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：677186;
+2019-04-11 15:01:56.911 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:01:56.911 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:01:56.912 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:01:56.916 DEBUG 35466 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:01.571 DEBUG 35466 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:01.671 DEBUG 35466 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:02:01.671 DEBUG 35466 --- [http-nio-8080-exec-4] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:02.619 DEBUG 35466 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:02.696 DEBUG 35466 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:02:02.696 DEBUG 35466 --- [http-nio-8080-exec-6] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:20.863 DEBUG 35466 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:20.880 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:02:20.880 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:20.880 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-11 15:02:20.881 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:02:20.881 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：739201;
+2019-04-11 15:02:20.881 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:02:20.881 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号尚未注册，请先注册
+2019-04-11 15:02:20.881 ERROR 35466 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:20.884 DEBUG 35466 --- [http-nio-8080-exec-8] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:28.765 DEBUG 35466 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:28.778 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:02:28.778 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:28.778 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:02:28.779 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:02:28.779 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：677186;
+2019-04-11 15:02:28.780 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:02:28.780 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：验证码错误，请重新输入
+2019-04-11 15:02:28.780 ERROR 35466 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:28.784 DEBUG 35466 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:32.436 DEBUG 35466 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:32.522 DEBUG 35466 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:02:32.523 DEBUG 35466 --- [http-nio-8080-exec-10] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:43.145 DEBUG 35466 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:43.147 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:02:43.147 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:43.148 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:02:43.148 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：970985;
+2019-04-11 15:02:43.148 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：677186;
+2019-04-11 15:02:43.148 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:02:43.148 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：手机格式不正确，请重新输入
+2019-04-11 15:02:43.149 ERROR 35466 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:43.151 DEBUG 35466 --- [http-nio-8080-exec-1] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:54.326 DEBUG 35466 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:54.336 DEBUG 35466 --- [http-nio-8080-exec-2] c.e.s.services.UserService               : 短信验证码过期时间：-1
+2019-04-11 15:02:54.471 DEBUG 35466 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : postHandle
+2019-04-11 15:02:54.472 DEBUG 35466 --- [http-nio-8080-exec-2] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:02:56.592 DEBUG 35466 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : preHandle
+2019-04-11 15:02:56.596 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-11 15:02:56.596 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:56.597 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-11 15:02:56.597 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042552;
+2019-04-11 15:02:56.597 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：smsCode -- 请求值：970985;
+2019-04-11 15:02:56.597 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：111;
+2019-04-11 15:02:56.597 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：当前手机号已经注册
+2019-04-11 15:02:56.598 ERROR 35466 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-11 15:02:56.600 DEBUG 35466 --- [http-nio-8080-exec-3] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-11 15:13:30.296  INFO 36531 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 36531 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-11 15:13:30.299 DEBUG 36531 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-11 15:13:30.301  INFO 36531 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-11 15:13:36.801  WARN 36531 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-11 15:13:37.109  INFO 36531 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 7.641 seconds (JVM running for 14.003)
