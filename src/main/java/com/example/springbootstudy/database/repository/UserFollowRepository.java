@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface UserFollowRepository extends CrudRepository<UserFollow, Long> {
 
-    List<UserFollow> findByUserIdAndStatus(String userId, long status, Pageable pageable);
+    List<UserFollow> findByFollowIdAndStatus(String followId, long status, Pageable pageable);
 
     int countByUserIdAndFollowId(String userId, String followId);
 }

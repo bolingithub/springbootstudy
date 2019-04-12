@@ -218,7 +218,7 @@ public class UserService {
      */
     public List<UserInfo> getUserFans(String userId, int start, int end) {
         logger.debug("查询用户粉丝：" + userId + " start：" + start + " end：" + end);
-        List<UserFollow> userFollowList = userFollowRepository.findByUserIdAndStatus(userId, 0, PageRequest.of(start, end));
+        List<UserFollow> userFollowList = userFollowRepository.findByFollowIdAndStatus(userId, 0, PageRequest.of(start, end));
         List<String> userIdList = new ArrayList<>();
         for (UserFollow item : userFollowList) {
             userIdList.add(item.getUserId());
