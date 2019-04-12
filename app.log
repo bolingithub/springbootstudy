@@ -111,3 +111,119 @@
 2019-04-12 11:21:03.596 ERROR 63632 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：关注的用户错误
 2019-04-12 11:21:03.596 ERROR 63632 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : ------------------------------
 2019-04-12 11:21:03.600 DEBUG 63632 --- [http-nio-8080-exec-9] c.e.springbootstudy.UserInterceptor      : afterCompletion
+2019-04-12 11:44:46.329  WARN 63632 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m20s565ms).
+2019-04-12 11:53:49.481  INFO 65766 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 65766 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 11:53:49.483 DEBUG 65766 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 11:53:49.487  INFO 65766 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 11:53:54.551  WARN 65766 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 11:53:54.944  INFO 65766 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 6.175 seconds (JVM running for 12.888)
+2019-04-12 11:53:59.202 DEBUG 65766 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : preHandle ？？？：+[Z@7a767289
+2019-04-12 11:53:59.221 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:53:59.222 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:53:59.222 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 11:53:59.222 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 11:53:59.222 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 11:53:59.223 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：关注的用户错误
+2019-04-12 11:53:59.223 ERROR 65766 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:53:59.292 DEBUG 65766 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 11:54:25.730  INFO 65827 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 65827 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 11:54:25.738 DEBUG 65827 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 11:54:25.739  INFO 65827 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 11:54:30.256  WARN 65827 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 11:54:30.536  INFO 65827 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.15 seconds (JVM running for 11.374)
+2019-04-12 11:54:34.339 DEBUG 65827 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : preHandle ？？？：+true
+2019-04-12 11:54:34.358 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:54:34.359 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:54:34.359 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 11:54:34.359 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 11:54:34.359 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 11:54:34.360 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：关注的用户错误
+2019-04-12 11:54:34.360 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:54:34.428 DEBUG 65827 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 11:54:49.311 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:54:49.314 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:54:49.314 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-12 11:54:49.315 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：186;
+2019-04-12 11:54:49.316 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：19;
+2019-04-12 11:54:49.316 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：手机格式不正确，请重新输入
+2019-04-12 11:54:49.316 ERROR 65827 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:54:57.142 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:54:57.143 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:54:57.143 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-12 11:54:57.144 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：186;
+2019-04-12 11:54:57.144 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：19;
+2019-04-12 11:54:57.144 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：手机格式不正确，请重新输入
+2019-04-12 11:54:57.145 ERROR 65827 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:55:10.745 ERROR 65827 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:55:10.746 ERROR 65827 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:55:10.746 ERROR 65827 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/sendSmsCode
+2019-04-12 11:55:10.746 ERROR 65827 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Required String parameter 'phone' is not present
+2019-04-12 11:55:10.747 ERROR 65827 --- [http-nio-8080-exec-8] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:55:19.725 ERROR 65827 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:55:19.725 ERROR 65827 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:55:19.725 ERROR 65827 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/sendSmsCode
+2019-04-12 11:55:19.725 ERROR 65827 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Required String parameter 'phone' is not present
+2019-04-12 11:55:19.725 ERROR 65827 --- [http-nio-8080-exec-9] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:55:25.398 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:55:25.398 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:55:25.398 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userRegister
+2019-04-12 11:55:25.399 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Required String parameter 'phone' is not present
+2019-04-12 11:55:25.399 ERROR 65827 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:56:40.479  INFO 66024 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 66024 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 11:56:40.483 DEBUG 66024 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 11:56:40.484  INFO 66024 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 11:56:44.297  WARN 66024 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appMvcConfig': Unsatisfied dependency expressed through field 'userTokenInterceptor'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.springbootstudy.pretreatment.UserTokenInterceptor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-04-12 11:56:44.453 ERROR 66024 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userTokenInterceptor in com.example.springbootstudy.pretreatment.AppMvcConfig required a bean of type 'com.example.springbootstudy.pretreatment.UserTokenInterceptor' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.springbootstudy.pretreatment.UserTokenInterceptor' in your configuration.
+
+2019-04-12 11:59:01.476  INFO 66221 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 66221 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 11:59:01.481 DEBUG 66221 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 11:59:01.482  INFO 66221 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 11:59:06.367  WARN 66221 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 11:59:07.205  INFO 66221 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 6.447 seconds (JVM running for 12.887)
+2019-04-12 11:59:11.568 DEBUG 66221 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : preHandle ？？？：+false
+2019-04-12 11:59:11.597 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 11:59:11.597 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:59:11.597 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 11:59:11.597 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 11:59:11.597 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 11:59:11.598 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：关注的用户错误
+2019-04-12 11:59:11.598 ERROR 66221 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 11:59:11.675 DEBUG 66221 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 12:46:26.587  WARN 66221 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m51s601ms).
+2019-04-12 13:20:00.764  WARN 66221 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m4s157ms).
+2019-04-12 14:12:20.012  WARN 66221 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s667ms).
+2019-04-12 14:44:00.725  INFO 74495 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 74495 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 14:44:00.728 DEBUG 74495 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 14:44:00.729  INFO 74495 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 14:44:05.062  WARN 74495 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 14:44:05.520  INFO 74495 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.512 seconds (JVM running for 11.765)
+2019-04-12 14:44:06.298 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:44:06.299 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:44:06.300 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-12 14:44:06.301 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：186;
+2019-04-12 14:44:06.302 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：999;
+2019-04-12 14:44:06.303 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：手机格式不正确，请重新输入
+2019-04-12 14:44:06.304 ERROR 74495 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:44:14.673 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:44:14.673 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:44:14.673 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-12 14:44:14.674 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：phone -- 请求值：18650042553;
+2019-04-12 14:44:14.674 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：999;
+2019-04-12 14:44:14.675 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：密码错误，请重新输入
+2019-04-12 14:44:14.675 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------

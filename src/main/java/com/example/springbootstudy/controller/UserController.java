@@ -30,7 +30,10 @@ public class UserController {
     public ServiceResult<UserInfoDTO> login(@RequestParam String phone, @RequestParam String password, String loginIp) throws ServiceException {
         checkoutPhone(phone);
         UserInfo userInfo = userService.userLoginByPhone(phone, password, loginIp);
-        return new ServiceResult<>(0, SUCCESS, DTOFactory.userInfo2DTO(userInfo));
+        UserInfoDTO userInfoDTO = DTOFactory.userInfo2DTO(userInfo);
+        String token = userService.saveUserToken(userInfo.getUserId());
+        userInfoDTO.setToken(token);
+        return new ServiceResult<>(0, SUCCESS, userInfoDTO);
     }
 
     @GetMapping("sendSmsCode")

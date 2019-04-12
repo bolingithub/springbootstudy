@@ -14,7 +14,7 @@ public class DTOFactory {
     public static UserInfoDTO userInfo2DTO(UserInfo userInfo) throws ServiceException {
         try {
             UserInfoDTO userInfoDTO = new UserInfoDTO();
-            String[] excludes = {"id", "createTime", "updateTime"};
+            String[] excludes = {"id", "createTime", "updateTime", "token"};
             BeanDataConverter.converterData(userInfo, userInfoDTO, excludes);
             return userInfoDTO;
         } catch (Exception e) {

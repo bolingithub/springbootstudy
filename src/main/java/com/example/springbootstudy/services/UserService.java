@@ -7,6 +7,7 @@ import com.example.springbootstudy.services.config.UserAuthType;
 import com.example.springbootstudy.error.exception.ServiceException;
 import com.example.springbootstudy.error.exception.ServiceExceptionCode;
 import com.example.springbootstudy.utils.RandomUtil;
+import com.example.springbootstudy.utils.TokenUtil;
 import com.example.springbootstudy.utils.UserIdMaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -73,6 +74,35 @@ public class UserService {
         userLoginHistory.setLoginIp(loginIp);
         userLoginHistoryRepository.save(userLoginHistory);
         return userInfo;
+    }
+
+    /**
+     * 保存用户token
+     *
+     * @param userId
+     * @return
+     * @throws ServiceException
+     */
+    public String saveUserToken(String userId) throws ServiceException {
+        List<UserAuths> userAuthsList = userAuthsRepository.findByIdentityTypeAndIdentifier(UserAuthType.TOKEN.getAuthType(), userId);
+        if (userAuthsList.size() > 1) {
+            throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，存在多个认证信息");
+        }
+        String token = TokenUtil.getUUID32();
+        if (userAuthsList.isEmpty()) {
+            UserAuths userAuths = new UserAuths();
+            userAuths.setUserId(userId);
+            userAuths.setIdentityType(UserAuthType.TOKEN.getAuthType());
+            userAuths.setIdentifier(userId);
+            userAuths.setCredential(token);
+            userAuthsRepository.save(userAuths);
+        } else {
+            // 已存在更新Token
+            UserAuths userAuths = userAuthsList.get(0);
+            userAuths.setCredential(token);
+            userAuthsRepository.save(userAuths);
+        }
+        return token;
     }
 
     /**

@@ -11,4 +11,5 @@ public class UserInfoDTO {
     private String sex;
     private String realName;
     private String personalId;
+    private String token;
 }

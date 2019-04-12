@@ -34,4 +34,13 @@ public interface UserAuthsRepository extends CrudRepository<UserAuths, Long> {
      * @return
      */
     boolean existsByIdentityTypeAndIdentifier(String identityType, String identifier);
+
+    /**
+     * 通过认证类型找到匹配的用户认证信息
+     *
+     * @param identityType
+     * @param identifier
+     * @return
+     */
+    List<UserAuths> findByIdentityTypeAndIdentifier(String identityType, String identifier);
 }
