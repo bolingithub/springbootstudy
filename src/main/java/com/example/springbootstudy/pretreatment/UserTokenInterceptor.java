@@ -1,5 +1,7 @@
 package com.example.springbootstudy.pretreatment;
 
+import com.example.springbootstudy.error.exception.ServiceException;
+import com.example.springbootstudy.error.exception.ServiceExceptionCode;
 import com.example.springbootstudy.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,21 +23,31 @@ public class UserTokenInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        logger.debug("preHandle ？？？：+"+ new boolean[]{userService == null}[0]);
-//        throw new Exception("preHandle Exception");
+        String userId = request.getParameter("userId");
+        String token = request.getParameter("token");
+        if (userId == null || userId.isEmpty()) {
+            throw new ServiceException(ServiceExceptionCode.PARAMS_ERROR, "缺少userId");
+        }
+        if (token == null || token.isEmpty()) {
+            throw new ServiceException(ServiceExceptionCode.PARAMS_ERROR, "缺少token");
+        }
+        logger.debug("userId:" + userId + " token:" + token);
+        boolean isTokenOk = userService.checkoutToken(userId, token);
+        if (!isTokenOk) {
+            throw new ServiceException(ServiceExceptionCode.TOKEN_ERROR, "用户认证信息错误，请重新登陆");
+        }
         return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        logger.debug("postHandle");
-//        throw new Exception("postHandle Exception");
+//        logger.debug("postHandle");
     }
 
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        logger.debug("afterCompletion");
+//        logger.debug("afterCompletion");
     }
 }
 

@@ -32,4 +32,8 @@ public class ServiceExceptionCode {
      * 当前注册手机号已经存在
      */
     public static final int USER_PHONE_HAVE_EXIST = 10006;
+    /**
+     * token不正确
+     */
+    public static final int TOKEN_ERROR = 10007;
 }

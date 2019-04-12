@@ -172,6 +172,18 @@ public class UserService {
         userAuthsRepository.save(userAuths);
     }
 
+
+    /**
+     * 校验用户token是否正确
+     *
+     * @param userId
+     * @param token
+     * @return
+     */
+    public boolean checkoutToken(String userId, String token) {
+        return !userAuthsRepository.findByIdentityTypeAndIdentifierAndCredential(UserAuthType.TOKEN.getAuthType(), userId, token).isEmpty();
+    }
+
     /**
      * 关注用户
      *
