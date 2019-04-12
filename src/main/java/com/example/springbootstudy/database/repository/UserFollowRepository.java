@@ -12,4 +12,6 @@ public interface UserFollowRepository extends CrudRepository<UserFollow, Long> {
     List<UserFollow> findByFollowIdAndStatus(String followId, long status, long limit, long offset);
 
     int countByUserIdAndFollowId(String userId, String followId);
+
+    int countByFollowIdAndStatus(String followId, long status);
 }

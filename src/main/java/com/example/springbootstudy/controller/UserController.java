@@ -79,6 +79,11 @@ public class UserController {
         return new ServiceResult<>(0, SUCCESS, userFanInfoDTOList);
     }
 
+    @GetMapping("getUserFansCount")
+    public int getUserFansCount(@RequestParam String userId, @RequestParam String token) {
+        return userService.getUserFansCount(userId);
+    }
+
     // 判断手机号是否符合要求
     private void checkoutPhone(String phone) throws ServiceException {
         if (phone.length() != 11) {

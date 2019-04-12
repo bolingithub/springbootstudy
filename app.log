@@ -1132,3 +1132,55 @@ Consider defining a bean of type 'com.example.springbootstudy.pretreatment.UserT
 2019-04-12 17:24:22.265 DEBUG 88388 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝1：2
 2019-04-12 17:24:22.265 DEBUG 88388 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝2：565903923223724040 -- id:11
 2019-04-12 17:24:22.271 DEBUG 88388 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝2：565903923223724041 -- id:12
+2019-04-12 17:25:32.969  INFO 88536 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 88536 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 17:25:32.972 DEBUG 88536 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 17:25:32.973  INFO 88536 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 17:25:36.822  WARN 88536 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 17:25:37.276  INFO 88536 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.705 seconds (JVM running for 10.6)
+2019-04-12 17:25:38.521 DEBUG 88536 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 17:25:38.744 DEBUG 88536 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝：565914682318127104 offset：8 limit：2
+2019-04-12 17:25:38.777 DEBUG 88536 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝1：2
+2019-04-12 17:32:04.730 ERROR 88536 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 17:32:04.731 ERROR 88536 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:32:04.731 ERROR 88536 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/userLogin
+2019-04-12 17:32:04.732 ERROR 88536 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Required String parameter 'phone' is not present
+2019-04-12 17:32:04.733 ERROR 88536 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:40:48.300  INFO 89865 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 89865 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 17:40:48.302 DEBUG 89865 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 17:40:48.303  INFO 89865 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 17:40:52.491  WARN 89865 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 17:40:52.767  INFO 89865 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.203 seconds (JVM running for 11.353)
+2019-04-12 17:40:54.503 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 17:40:54.504 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:40:54.504 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFansCount
+2019-04-12 17:40:54.504 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 17:40:54.505 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 17:40:54.505 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
+2019-04-12 17:40:54.505 ERROR 89865 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:01.470 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 17:41:01.471 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:01.471 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 17:41:01.472 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 17:41:01.472 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 17:41:01.473 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
+2019-04-12 17:41:01.473 ERROR 89865 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:03.958 DEBUG 89865 --- [http-nio-8080-exec-3] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892da
+2019-04-12 17:41:04.119 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 17:41:04.120 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:04.120 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 17:41:04.120 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 17:41:04.120 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：565914682318127104;
+2019-04-12 17:41:04.120 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892da;
+2019-04-12 17:41:04.121 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 17:41:04.121 ERROR 89865 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:10.422 DEBUG 89865 --- [http-nio-8080-exec-5] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892da
+2019-04-12 17:41:10.429 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 17:41:10.430 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:10.430 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFansCount
+2019-04-12 17:41:10.430 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 17:41:10.431 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：565914682318127104;
+2019-04-12 17:41:10.431 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892da;
+2019-04-12 17:41:10.431 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 17:41:10.431 ERROR 89865 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 17:41:22.280 DEBUG 89865 --- [http-nio-8080-exec-6] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 17:41:49.240 DEBUG 89865 --- [http-nio-8080-exec-9] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc

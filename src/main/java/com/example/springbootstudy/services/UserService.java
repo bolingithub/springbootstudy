@@ -219,6 +219,7 @@ public class UserService {
         logger.debug("查询用户粉丝：" + userId + " offset：" + offset + " limit：" + limit);
         List<UserFollow> userFollowList = userFollowRepository.findByFollowIdAndStatus(userId, 0, limit, offset);
         logger.debug("查询用户粉丝1：" + userFollowList.size());
+        // todo:批量查询的方式，需要更改
         List<UserInfo> userInfoList = new ArrayList<>();
         for (UserFollow item : userFollowList) {
             List<UserInfo> userInfos = userInfoRepository.findByUserId(item.getUserId());
@@ -227,6 +228,16 @@ public class UserService {
             }
         }
         return userInfoList;
+    }
+
+    /**
+     * 获取粉丝数量
+     *
+     * @param userId
+     * @return
+     */
+    public int getUserFansCount(String userId) {
+        return userFollowRepository.countByFollowIdAndStatus(userId, 0);
     }
 
     /**
