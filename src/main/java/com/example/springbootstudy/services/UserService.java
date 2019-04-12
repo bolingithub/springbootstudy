@@ -1,13 +1,7 @@
 package com.example.springbootstudy.services;
 
-import com.example.springbootstudy.database.entity.SmsCode;
-import com.example.springbootstudy.database.entity.UserAuths;
-import com.example.springbootstudy.database.entity.UserInfo;
-import com.example.springbootstudy.database.entity.UserLoginHistory;
-import com.example.springbootstudy.database.repository.SmsCodeRepository;
-import com.example.springbootstudy.database.repository.UserAuthsRepository;
-import com.example.springbootstudy.database.repository.UserInfoRepository;
-import com.example.springbootstudy.database.repository.UserLoginHistoryRepository;
+import com.example.springbootstudy.database.entity.*;
+import com.example.springbootstudy.database.repository.*;
 import com.example.springbootstudy.services.config.SmsCodeType;
 import com.example.springbootstudy.services.config.UserAuthType;
 import com.example.springbootstudy.error.exception.ServiceException;
@@ -40,6 +34,9 @@ public class UserService {
 
     @Autowired
     SmsCodeRepository smsCodeRepository;
+
+    @Autowired
+    UserFollowRepository userFollowRepository;
 
     /**
      * 用户通过手机号码登陆
@@ -146,6 +143,28 @@ public class UserService {
     }
 
     /**
+     * 关注用户
+     *
+     * @param userId
+     * @param followId
+     * @throws ServiceException
+     */
+    public void followUser(String userId, String followId) throws ServiceException {
+        boolean followUserExist = userInfoRepository.countByUserId(followId) > 0;
+        if (!followUserExist) {
+            throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "关注的用户不存在");
+        }
+        boolean isFollowed = userFollowRepository.countByUserIdAndFollowId(userId, followId) > 0;
+        if (isFollowed) {
+            throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "已关注该用户，无需再次关注");
+        }
+        UserFollow userFollow = new UserFollow();
+        userFollow.setUserId(userId);
+        userFollow.setFollowId(followId);
+        userFollowRepository.save(userFollow);
+    }
+
+    /**
      * 保存短信验证码
      *
      * @param phone
@@ -163,4 +182,5 @@ public class UserService {
         smsCodeRepository.save(smsCode);
         return ranCode;
     }
+
 }

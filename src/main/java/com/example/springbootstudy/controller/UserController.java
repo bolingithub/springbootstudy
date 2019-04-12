@@ -47,6 +47,15 @@ public class UserController {
         return new ServiceResult<>(0, SUCCESS, null);
     }
 
+    @GetMapping("followUser")
+    public ServiceResult<Void> followUser(String userId, String followId) throws ServiceException {
+        if (followId.length() != 18) {
+            throw new ServiceException(ServiceExceptionCode.PARAMS_ERROR, "关注的用户错误");
+        }
+        userService.followUser(userId, followId);
+        return new ServiceResult<>(0, SUCCESS, null);
+    }
+
     // 判断手机号是否符合要求
     private void checkoutPhone(String phone) throws ServiceException {
         if (phone.length() != 11) {

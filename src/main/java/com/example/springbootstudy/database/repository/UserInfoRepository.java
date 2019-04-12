@@ -8,4 +8,6 @@ import java.util.List;
 public interface UserInfoRepository extends CrudRepository<UserInfo, Long> {
 
     List<UserInfo> findByUserId(String userId);
+
+    int countByUserId(String userId);
 }
