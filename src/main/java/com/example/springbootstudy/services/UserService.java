@@ -12,7 +12,6 @@ import com.example.springbootstudy.utils.UserIdMaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
@@ -212,18 +211,22 @@ public class UserService {
      * 获取用户粉丝
      *
      * @param userId
-     * @param start
-     * @param end
+     * @param offset
+     * @param limit
      * @return
      */
-    public List<UserInfo> getUserFans(String userId, int start, int end) {
-        logger.debug("查询用户粉丝：" + userId + " start：" + start + " end：" + end);
-        List<UserFollow> userFollowList = userFollowRepository.findByFollowIdAndStatus(userId, 0, PageRequest.of(start, end));
-        List<String> userIdList = new ArrayList<>();
+    public List<UserInfo> getUserFans(String userId, int offset, int limit) {
+        logger.debug("查询用户粉丝：" + userId + " offset：" + offset + " limit：" + limit);
+        List<UserFollow> userFollowList = userFollowRepository.findByFollowIdAndStatus(userId, 0, limit, offset);
+        logger.debug("查询用户粉丝1：" + userFollowList.size());
+        List<UserInfo> userInfoList = new ArrayList<>();
         for (UserFollow item : userFollowList) {
-            userIdList.add(item.getUserId());
+            List<UserInfo> userInfos = userInfoRepository.findByUserId(item.getUserId());
+            if (!userInfos.isEmpty()) {
+                userInfoList.add(userInfos.get(0));
+            }
         }
-        return userInfoRepository.findAllByUserId(userIdList);
+        return userInfoList;
     }
 
     /**

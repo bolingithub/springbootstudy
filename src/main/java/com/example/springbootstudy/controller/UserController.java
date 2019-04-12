@@ -64,14 +64,14 @@ public class UserController {
     }
 
     @GetMapping("getUserFans")
-    public ServiceResult<List<UserFanInfoDTO>> getUserFans(@RequestParam String userId, @RequestParam String token, Integer begin, Integer limit) throws ServiceException {
-        if (begin == null) {
-            begin = 0;
+    public ServiceResult<List<UserFanInfoDTO>> getUserFans(@RequestParam String userId, @RequestParam String token, Integer offset, Integer limit) throws ServiceException {
+        if (offset == null) {
+            offset = 0;
         }
         if (limit == null) {
             limit = 20;
         }
-        List<UserInfo> userInfoList = userService.getUserFans(userId, begin, limit);
+        List<UserInfo> userInfoList = userService.getUserFans(userId, offset, limit);
         List<UserFanInfoDTO> userFanInfoDTOList = new ArrayList<>();
         for (UserInfo userInfo : userInfoList) {
             userFanInfoDTOList.add(DTOFactory.userFanInfo2DTO(userInfo));

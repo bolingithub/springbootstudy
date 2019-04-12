@@ -9,7 +9,5 @@ public interface UserInfoRepository extends CrudRepository<UserInfo, Long> {
 
     List<UserInfo> findByUserId(String userId);
 
-    List<UserInfo> findAllByUserId(List<String> userIdList);
-
     int countByUserId(String userId);
 }
