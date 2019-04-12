@@ -22,4 +22,16 @@ public class DTOFactory {
             throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，数据格式转换错误");
         }
     }
+
+    public static UserFanInfoDTO userFanInfo2DTO(UserInfo userInfo) throws ServiceException {
+        try {
+            UserFanInfoDTO userFanInfoDTO = new UserFanInfoDTO();
+            String[] excludes = {"id", "createTime", "updateTime", "phone", "realName", "personalId"};
+            BeanDataConverter.converterData(userInfo, userFanInfoDTO, excludes);
+            return userFanInfoDTO;
+        } catch (Exception e) {
+            logger.error("数据转换错误，未忽略该属性？：" + e.getMessage());
+            throw new ServiceException(ServiceExceptionCode.DEFAULT_ERROR, "系统错误，数据格式转换错误");
+        }
+    }
 }

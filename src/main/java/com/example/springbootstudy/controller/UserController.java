@@ -2,6 +2,7 @@ package com.example.springbootstudy.controller;
 
 import com.example.springbootstudy.controller.dto.DTOFactory;
 import com.example.springbootstudy.controller.dto.ServiceResult;
+import com.example.springbootstudy.controller.dto.UserFanInfoDTO;
 import com.example.springbootstudy.controller.dto.UserInfoDTO;
 import com.example.springbootstudy.database.entity.UserInfo;
 import com.example.springbootstudy.error.exception.ServiceExceptionCode;
@@ -14,6 +15,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.example.springbootstudy.controller.dto.ServiceResult.SUCCESS;
 
@@ -57,6 +61,22 @@ public class UserController {
         }
         userService.followUser(userId, followId);
         return new ServiceResult<>(0, SUCCESS, null);
+    }
+
+    @GetMapping("getUserFans")
+    public ServiceResult<List<UserFanInfoDTO>> getUserFans(@RequestParam String userId, @RequestParam String token, Integer begin, Integer limit) throws ServiceException {
+        if (begin == null) {
+            begin = 0;
+        }
+        if (limit == null) {
+            limit = 20;
+        }
+        List<UserInfo> userInfoList = userService.getUserFans(userId, begin, limit);
+        List<UserFanInfoDTO> userFanInfoDTOList = new ArrayList<>();
+        for (UserInfo userInfo : userInfoList) {
+            userFanInfoDTOList.add(DTOFactory.userFanInfo2DTO(userInfo));
+        }
+        return new ServiceResult<>(0, SUCCESS, userFanInfoDTOList);
     }
 
     // 判断手机号是否符合要求

@@ -227,3 +227,182 @@ Consider defining a bean of type 'com.example.springbootstudy.pretreatment.UserT
 2019-04-12 14:44:14.674 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：password -- 请求值：999;
 2019-04-12 14:44:14.675 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：密码错误，请重新输入
 2019-04-12 14:44:14.675 ERROR 74495 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:55:39.250  INFO 75510 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 75510 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 14:55:39.253 DEBUG 75510 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 14:55:39.254  INFO 75510 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 14:55:43.694  WARN 75510 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 14:55:44.113  INFO 75510 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.249 seconds (JVM running for 12.152)
+2019-04-12 14:55:50.258 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:55:50.260 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:55:50.260 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:55:50.260 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 14:55:50.261 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 14:55:50.261 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
+2019-04-12 14:55:50.261 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:55:58.106 DEBUG 75510 --- [http-nio-8080-exec-2] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:111
+2019-04-12 14:55:58.276 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:55:58.277 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:55:58.277 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:55:58.277 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 14:55:58.277 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 14:55:58.278 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：111;
+2019-04-12 14:55:58.278 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 14:55:58.278 ERROR 75510 --- [http-nio-8080-exec-2] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:57:02.523 DEBUG 75510 --- [http-nio-8080-exec-5] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 14:57:02.533 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:57:02.533 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:57:02.534 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:57:02.535 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 14:57:02.535 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 14:57:02.535 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 14:57:02.536 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 14:57:02.536 ERROR 75510 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:57:53.441 DEBUG 75510 --- [http-nio-8080-exec-7] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 14:57:53.482 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:57:53.483 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:57:53.483 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:57:53.483 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 14:57:53.484 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
+2019-04-12 14:57:53.484 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 14:57:53.485 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：关注的用户错误
+2019-04-12 14:57:53.485 ERROR 75510 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:57:53.488 DEBUG 75510 --- [http-nio-8080-exec-7] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 14:58:05.183 DEBUG 75510 --- [http-nio-8080-exec-8] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 14:58:05.326 DEBUG 75510 --- [http-nio-8080-exec-8] c.e.s.pretreatment.UserTokenInterceptor  : postHandle
+2019-04-12 14:58:05.327 DEBUG 75510 --- [http-nio-8080-exec-8] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 14:58:16.980 DEBUG 75510 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 14:58:16.994 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:58:16.994 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:58:16.995 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:58:16.995 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 14:58:16.995 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：565914682318127104;
+2019-04-12 14:58:16.995 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 14:58:16.995 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：已关注该用户，无需再次关注
+2019-04-12 14:58:16.995 ERROR 75510 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:58:16.997 DEBUG 75510 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 14:58:30.652 DEBUG 75510 --- [http-nio-8080-exec-3] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 14:58:30.670 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:58:30.670 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:58:30.670 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:58:30.671 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 14:58:30.671 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：565914682318127104;
+2019-04-12 14:58:30.671 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 14:58:30.671 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：已关注该用户，无需再次关注
+2019-04-12 14:58:30.671 ERROR 75510 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:58:30.674 DEBUG 75510 --- [http-nio-8080-exec-3] c.e.s.pretreatment.UserTokenInterceptor  : afterCompletion
+2019-04-12 14:58:32.649 DEBUG 75510 --- [http-nio-8080-exec-6] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892da
+2019-04-12 14:58:32.654 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 14:58:32.655 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 14:58:32.655 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/followUser
+2019-04-12 14:58:32.655 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 14:58:32.655 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：565914682318127104;
+2019-04-12 14:58:32.655 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892da;
+2019-04-12 14:58:32.655 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 14:58:32.656 ERROR 75510 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:22:41.722  INFO 77867 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 77867 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:22:41.725 DEBUG 77867 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:22:41.725  INFO 77867 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:22:46.603  WARN 77867 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:22:46.911  INFO 77867 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.593 seconds (JVM running for 11.74)
+2019-04-12 15:23:32.650 ERROR 77867 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:23:32.652 ERROR 77867 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:23:32.652 ERROR 77867 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:23:32.653 ERROR 77867 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少userId
+2019-04-12 15:23:32.653 ERROR 77867 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:23:48.867 ERROR 77867 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:23:48.868 ERROR 77867 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:23:48.868 ERROR 77867 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:23:48.869 ERROR 77867 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 15:23:48.870 ERROR 77867 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
+2019-04-12 15:23:48.871 ERROR 77867 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:24:13.766 DEBUG 77867 --- [http-nio-8080-exec-5] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:565903923223724032
+2019-04-12 15:24:13.942 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:24:13.942 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:24:13.943 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:24:13.943 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-12 15:24:13.944 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：565903923223724032;
+2019-04-12 15:24:13.944 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 15:24:13.944 ERROR 77867 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:24:22.525 DEBUG 77867 --- [http-nio-8080-exec-6] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:565903923223724032
+2019-04-12 15:24:22.531 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:24:22.532 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:24:22.532 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:24:22.532 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 15:24:22.533 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：565903923223724032;
+2019-04-12 15:24:22.534 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-12 15:24:22.534 ERROR 77867 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:24:30.351 DEBUG 77867 --- [http-nio-8080-exec-7] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 15:24:30.390 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:24:30.391 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:24:30.391 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:24:30.391 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 15:24:30.392 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 15:24:30.393 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Optional long parameter 'begin' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+2019-04-12 15:24:30.394 ERROR 77867 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:26:47.343  INFO 78227 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 78227 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:26:47.346 DEBUG 78227 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:26:47.348  INFO 78227 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:26:52.795  WARN 78227 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:26:53.304  INFO 78227 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 6.384 seconds (JVM running for 12.633)
+2019-04-12 15:27:17.393  INFO 78275 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 78275 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:27:17.396 DEBUG 78275 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:27:17.397  INFO 78275 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:27:22.507  WARN 78275 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:27:23.689  INFO 78275 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 6.664 seconds (JVM running for 12.802)
+2019-04-12 15:27:36.749 DEBUG 78275 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 15:27:37.116 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:27:37.119 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:27:37.120 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:27:37.121 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 15:27:37.122 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 15:27:37.122 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Parameter value [0%] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [0%] did not match expected type [java.lang.Long (n/a)]
+2019-04-12 15:27:37.123 ERROR 78275 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:28:31.880  INFO 78379 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 78379 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:28:31.882 DEBUG 78379 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:28:31.883  INFO 78379 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:28:35.820  WARN 78379 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:28:36.103  INFO 78379 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.599 seconds (JVM running for 10.873)
+2019-04-12 15:28:44.193 DEBUG 78379 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 15:28:44.360 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:28:44.360 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:28:44.360 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:28:44.360 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 15:28:44.360 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 15:28:44.361 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Parameter value [0%] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [0%] did not match expected type [java.lang.Long (n/a)]
+2019-04-12 15:28:44.361 ERROR 78379 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:29:40.024  INFO 78479 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 78479 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:29:40.026 DEBUG 78479 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:29:40.027  INFO 78479 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:29:44.045  WARN 78479 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:29:44.353  INFO 78479 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.712 seconds (JVM running for 10.785)
+2019-04-12 15:29:50.460 DEBUG 78479 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 15:29:50.637 DEBUG 78479 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝：565903923223724032 start：0 end：20
+2019-04-12 15:29:50.649 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:29:50.649 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:29:50.649 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:29:50.649 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 15:29:50.650 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 15:29:50.650 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Parameter value [0%] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [0%] did not match expected type [java.lang.Long (n/a)]
+2019-04-12 15:29:50.650 ERROR 78479 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:30:33.152  INFO 78557 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 78557 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:30:33.155 DEBUG 78557 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:30:33.157  INFO 78557 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:30:38.098  WARN 78557 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:30:38.409  INFO 78557 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.794 seconds (JVM running for 12.183)
+2019-04-12 15:31:03.094 DEBUG 78557 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 15:31:03.369 DEBUG 78557 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝：565903923223724032 start：0 end：20
+2019-04-12 15:31:03.399 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-12 15:31:03.399 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:31:03.399 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/user/getUserFans
+2019-04-12 15:31:03.400 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565903923223724032;
+2019-04-12 15:31:03.400 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-12 15:31:03.401 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Parameter value [0%] did not match expected type [java.lang.Long (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [0%] did not match expected type [java.lang.Long (n/a)]
+2019-04-12 15:31:03.403 ERROR 78557 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-12 15:51:43.735  INFO 80367 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 80367 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-12 15:51:43.739 DEBUG 80367 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-12 15:51:43.740  INFO 80367 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-12 15:51:48.404  WARN 80367 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-12 15:51:48.721  INFO 80367 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.602 seconds (JVM running for 11.578)
+2019-04-12 15:51:51.418 DEBUG 80367 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565903923223724032 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-12 15:51:51.586 DEBUG 80367 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询用户粉丝：565903923223724032 start：0 end：20
+2019-04-12 15:51:51.597 DEBUG 80367 --- [http-nio-8080-exec-1] c.e.s.services.UserService               : 查询成功：1

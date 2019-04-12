@@ -12,9 +12,11 @@ import com.example.springbootstudy.utils.UserIdMaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -204,6 +206,24 @@ public class UserService {
         userFollow.setUserId(userId);
         userFollow.setFollowId(followId);
         userFollowRepository.save(userFollow);
+    }
+
+    /**
+     * 获取用户粉丝
+     *
+     * @param userId
+     * @param start
+     * @param end
+     * @return
+     */
+    public List<UserInfo> getUserFans(String userId, int start, int end) {
+        logger.debug("查询用户粉丝：" + userId + " start：" + start + " end：" + end);
+        List<UserFollow> userFollowList = userFollowRepository.findByUserIdAndStatus(userId, 0, PageRequest.of(start, end));
+        List<String> userIdList = new ArrayList<>();
+        for (UserFollow item : userFollowList) {
+            userIdList.add(item.getUserId());
+        }
+        return userInfoRepository.findAllByUserId(userIdList);
     }
 
     /**
