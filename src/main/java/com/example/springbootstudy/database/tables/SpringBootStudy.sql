@@ -11,11 +11,48 @@
  Target Server Version : 80013
  File Encoding         : 65001
 
- Date: 15/04/2019 15:17:29
+ Date: 15/04/2019 17:46:45
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for moment
+-- ----------------------------
+DROP TABLE IF EXISTS `moment`;
+CREATE TABLE `moment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `content` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '朋友圈内容',
+  `img_path_1` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_2` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_3` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_4` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_5` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_6` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_7` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_8` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `img_path_9` varchar(255) DEFAULT NULL COMMENT '图片存放路径',
+  `status` int(2) NOT NULL DEFAULT '0' COMMENT '0:发表 1:删除',
+  `updata_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for moment_like
+-- ----------------------------
+DROP TABLE IF EXISTS `moment_like`;
+CREATE TABLE `moment_like` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `moment_id` int(11) NOT NULL COMMENT '朋友圈id',
+  `user_id` varchar(18) NOT NULL COMMENT '用户id',
+  `comment` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '评论',
+  `status` int(2) NOT NULL DEFAULT '0' COMMENT '2:评论 1:点赞 0:取消点赞',
+  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for notify
@@ -30,7 +67,7 @@ CREATE TABLE `notify` (
   `status` int(2) NOT NULL DEFAULT '0' COMMENT '0：未读 1：已读 2：删除',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for sms_code
