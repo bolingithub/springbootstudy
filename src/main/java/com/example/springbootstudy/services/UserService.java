@@ -199,17 +199,33 @@ public class UserService {
         }
         UserFollow userFollow = userFollowRepository.findByUserIdAndFollowId(userId, followId);
         if (userFollow != null) {
-            if (userFollow.getStatus() == 0) {
-                throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "已关注该用户，无需再次关注");
-            } else {
-                throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "已拉黑该用户，请先解除拉黑");
-            }
+            userFollow.setStatus(0);
+            userFollowRepository.save(userFollow);
         } else {
             UserFollow noUserFollow = new UserFollow();
             noUserFollow.setUserId(userId);
             noUserFollow.setFollowId(followId);
             noUserFollow.setStatus(0);
             userFollowRepository.save(noUserFollow);
+        }
+    }
+
+    /**
+     * 取消关注
+     *
+     * @param userId
+     * @param followId
+     * @throws ServiceException
+     */
+    public void cancelFollowUser(String userId, String followId) throws ServiceException {
+        boolean followUserExist = userInfoRepository.countByUserId(followId) > 0;
+        if (!followUserExist) {
+            throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "取消关注的用户不存在");
+        }
+        UserFollow userFollow = userFollowRepository.findByUserIdAndFollowId(userId, followId);
+        if (userFollow != null) {
+            userFollow.setStatus(2);
+            userFollowRepository.save(userFollow);
         }
     }
 
@@ -272,7 +288,7 @@ public class UserService {
     }
 
     /**
-     * 取消通知
+     * 取消拉黑
      *
      * @param userId
      * @param followId
@@ -285,7 +301,8 @@ public class UserService {
         }
         UserFollow userFollow = userFollowRepository.findByUserIdAndFollowId(userId, followId);
         if (userFollow != null) {
-            userFollow.setStatus(0);
+            // 取消拉黑，不关注
+            userFollow.setStatus(2);
             userFollowRepository.save(userFollow);
         }
     }

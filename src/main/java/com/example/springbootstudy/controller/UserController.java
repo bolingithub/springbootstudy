@@ -63,6 +63,15 @@ public class UserController {
         return new ServiceResult<>(0, SUCCESS, null);
     }
 
+    @GetMapping("cancelFollowUser")
+    public ServiceResult<Void> cancelFollowUser(@RequestParam String userId, @RequestParam String followId, @RequestParam String token) throws ServiceException {
+        if (followId.length() != 18) {
+            throw new ServiceException(ServiceExceptionCode.PARAMS_ERROR, "取消关注的用户错误");
+        }
+        userService.cancelFollowUser(userId, followId);
+        return new ServiceResult<>(0, SUCCESS, null);
+    }
+
     @GetMapping("getUserFans")
     public ServiceResult<List<UserFanInfoDTO>> getUserFans(@RequestParam String userId, @RequestParam String token, Integer offset, Integer limit) throws ServiceException {
         if (offset == null) {
@@ -92,7 +101,7 @@ public class UserController {
     }
 
     @GetMapping("cancelBlacklist")
-    public ServiceResult<Void> cancelBlacklist(@RequestParam String userId, @RequestParam String followId, @RequestParam String token) throws ServiceException{
+    public ServiceResult<Void> cancelBlacklist(@RequestParam String userId, @RequestParam String followId, @RequestParam String token) throws ServiceException {
         userService.cancelBlacklist(userId, followId);
         return new ServiceResult<>(0, SUCCESS, null);
     }

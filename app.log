@@ -75,3 +75,60 @@
 2019-04-15 11:42:08.588  WARN 4738 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-04-15 11:42:08.857  INFO 4738 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.579 seconds (JVM running for 10.541)
 2019-04-15 13:00:19.081  WARN 4738 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m41s597ms).
+2019-04-15 15:05:10.489  INFO 12222 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 12222 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 15:05:10.493 DEBUG 12222 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 15:05:10.494  INFO 12222 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 15:05:15.255  WARN 12222 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 15:05:15.524  INFO 12222 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.511 seconds (JVM running for 11.475)
+2019-04-15 15:06:32.259 ERROR 12222 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 15:06:32.260 ERROR 12222 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:06:32.260 ERROR 12222 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/getSysNotify
+2019-04-15 15:06:32.261 ERROR 12222 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少userId
+2019-04-15 15:06:32.261 ERROR 12222 --- [http-nio-8080-exec-1] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:13.264 ERROR 12222 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 15:07:13.265 ERROR 12222 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:13.266 ERROR 12222 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/getSysNotify
+2019-04-15 15:07:13.266 ERROR 12222 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：1;
+2019-04-15 15:07:13.267 ERROR 12222 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
+2019-04-15 15:07:13.267 ERROR 12222 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:18.199 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 15:07:18.200 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:18.200 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/getSysNotify
+2019-04-15 15:07:18.200 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：1;
+2019-04-15 15:07:18.201 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token-1 -- 请求值：;
+2019-04-15 15:07:18.201 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
+2019-04-15 15:07:18.201 ERROR 12222 --- [http-nio-8080-exec-4] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:21.166 DEBUG 12222 --- [http-nio-8080-exec-5] c.e.s.pretreatment.UserTokenInterceptor  : userId:1 token:2
+2019-04-15 15:07:21.356 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 15:07:21.356 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:21.356 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/getSysNotify
+2019-04-15 15:07:21.356 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：1;
+2019-04-15 15:07:21.357 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：2;
+2019-04-15 15:07:21.357 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-15 15:07:21.357 ERROR 12222 --- [http-nio-8080-exec-5] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:33.559 DEBUG 12222 --- [http-nio-8080-exec-7] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:2
+2019-04-15 15:07:33.565 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 15:07:33.566 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:33.566 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/getSysNotify
+2019-04-15 15:07:33.566 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-15 15:07:33.567 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：2;
+2019-04-15 15:07:33.567 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-15 15:07:33.568 ERROR 12222 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 15:07:40.782 DEBUG 12222 --- [http-nio-8080-exec-8] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 15:16:40.107 DEBUG 12222 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 15:18:25.377 DEBUG 12222 --- [http-nio-8080-exec-4] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 15:18:27.230 DEBUG 12222 --- [http-nio-8080-exec-5] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 15:20:32.562  INFO 12911 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 12911 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 15:20:32.564 DEBUG 12911 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 15:20:32.565  INFO 12911 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 15:20:36.331  WARN 12911 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 15:20:36.593  INFO 12911 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.395 seconds (JVM running for 10.461)
+2019-04-15 15:23:00.463 DEBUG 12911 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 15:23:00.640 DEBUG 12911 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
+2019-04-15 15:24:20.452  INFO 13078 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 13078 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 15:24:20.454 DEBUG 13078 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 15:24:20.456  INFO 13078 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 15:24:23.874  WARN 13078 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 15:24:24.122  INFO 13078 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.003 seconds (JVM running for 9.984)
+2019-04-15 15:24:44.074 DEBUG 13078 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 15:24:44.231 DEBUG 13078 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20

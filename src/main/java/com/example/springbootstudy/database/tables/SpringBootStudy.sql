@@ -11,7 +11,7 @@
  Target Server Version : 80013
  File Encoding         : 65001
 
- Date: 15/04/2019 14:55:05
+ Date: 15/04/2019 15:17:29
 */
 
 SET NAMES utf8mb4;
@@ -26,11 +26,11 @@ CREATE TABLE `notify` (
   `user_id` varchar(18) NOT NULL COMMENT '用户id',
   `title` varchar(128) NOT NULL COMMENT '标题',
   `content` varchar(255) NOT NULL COMMENT '内容',
-  `type` int(2) NOT NULL COMMENT '通知：0:系统通知',
+  `type` int(2) NOT NULL DEFAULT '0' COMMENT '通知：0:系统通知',
   `status` int(2) NOT NULL DEFAULT '0' COMMENT '0：未读 1：已读 2：删除',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for sms_code
