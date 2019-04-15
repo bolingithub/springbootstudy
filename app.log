@@ -69,3 +69,9 @@
 2019-04-15 11:31:30.603 ERROR 1635 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：followId -- 请求值：56591812002001715;
 2019-04-15 11:31:30.604 ERROR 1635 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：缺少token
 2019-04-15 11:31:30.605 ERROR 1635 --- [http-nio-8080-exec-7] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 11:42:04.657  INFO 4738 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 4738 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 11:42:04.659 DEBUG 4738 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 11:42:04.660  INFO 4738 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 11:42:08.588  WARN 4738 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 11:42:08.857  INFO 4738 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.579 seconds (JVM running for 10.541)
+2019-04-15 13:00:19.081  WARN 4738 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m41s597ms).

@@ -272,6 +272,25 @@ public class UserService {
     }
 
     /**
+     * 取消通知
+     *
+     * @param userId
+     * @param followId
+     * @throws ServiceException
+     */
+    public void cancelBlacklist(String userId, String followId) throws ServiceException {
+        boolean followUserExist = userInfoRepository.countByUserId(followId) > 0;
+        if (!followUserExist) {
+            throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "取消拉黑的用户不存在");
+        }
+        UserFollow userFollow = userFollowRepository.findByUserIdAndFollowId(userId, followId);
+        if (userFollow != null) {
+            userFollow.setStatus(0);
+            userFollowRepository.save(userFollow);
+        }
+    }
+
+    /**
      * 保存短信验证码
      *
      * @param phone

@@ -91,6 +91,12 @@ public class UserController {
         return new ServiceResult<>(0, SUCCESS, null);
     }
 
+    @GetMapping("cancelBlacklist")
+    public ServiceResult<Void> cancelBlacklist(@RequestParam String userId, @RequestParam String followId, @RequestParam String token) throws ServiceException{
+        userService.cancelBlacklist(userId, followId);
+        return new ServiceResult<>(0, SUCCESS, null);
+    }
+
     // 判断手机号是否符合要求
     private void checkoutPhone(String phone) throws ServiceException {
         if (phone.length() != 11) {
