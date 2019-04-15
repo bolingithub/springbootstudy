@@ -13,5 +13,7 @@ public interface UserFollowRepository extends CrudRepository<UserFollow, Long> {
 
     int countByUserIdAndFollowId(String userId, String followId);
 
+    UserFollow findByUserIdAndFollowId(String userId, String followId);
+
     int countByFollowIdAndStatus(String followId, long status);
 }

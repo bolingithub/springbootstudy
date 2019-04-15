@@ -241,6 +241,31 @@ public class UserService {
     }
 
     /**
+     * 拉黑用户
+     *
+     * @param userId
+     * @param followId
+     * @throws ServiceException
+     */
+    public void toBlacklist(String userId, String followId) throws ServiceException {
+        boolean followUserExist = userInfoRepository.countByUserId(followId) > 0;
+        if (!followUserExist) {
+            throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "拉黑的用户不存在");
+        }
+        UserFollow userFollow = userFollowRepository.findByUserIdAndFollowId(userId, followId);
+        if (userFollow != null) {
+            userFollow.setStatus(1);
+            userFollowRepository.save(userFollow);
+        } else {
+            UserFollow noUserFollow = new UserFollow();
+            noUserFollow.setUserId(userId);
+            noUserFollow.setFollowId(followId);
+            noUserFollow.setStatus(1);
+            userFollowRepository.save(noUserFollow);
+        }
+    }
+
+    /**
      * 保存短信验证码
      *
      * @param phone

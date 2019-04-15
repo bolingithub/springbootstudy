@@ -80,8 +80,15 @@ public class UserController {
     }
 
     @GetMapping("getUserFansCount")
-    public int getUserFansCount(@RequestParam String userId, @RequestParam String token) {
-        return userService.getUserFansCount(userId);
+    public ServiceResult<Integer> getUserFansCount(@RequestParam String userId, @RequestParam String token) {
+        int count = userService.getUserFansCount(userId);
+        return new ServiceResult<>(0, SUCCESS, count);
+    }
+
+    @GetMapping("toBlacklist")
+    public ServiceResult<Void> toBlacklist(@RequestParam String userId, @RequestParam String followId, @RequestParam String token) throws ServiceException {
+        userService.toBlacklist(userId, followId);
+        return new ServiceResult<>(0, SUCCESS, null);
     }
 
     // 判断手机号是否符合要求
