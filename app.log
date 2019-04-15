@@ -157,3 +157,24 @@
 2019-04-15 16:13:44.211 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
 2019-04-15 16:13:51.153 DEBUG 14875 --- [http-nio-8080-exec-7] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
 2019-04-15 16:13:51.162 DEBUG 14875 --- [http-nio-8080-exec-7] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
+2019-04-15 16:20:06.174  INFO 15284 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 15284 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 16:20:06.177 DEBUG 15284 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 16:20:06.178  INFO 15284 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 16:20:09.970  WARN 15284 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 16:20:10.248  INFO 15284 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.407 seconds (JVM running for 11.224)
+2019-04-15 16:20:14.234 DEBUG 15284 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 16:20:14.402 DEBUG 15284 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
+2019-04-15 16:25:14.921  INFO 15516 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 15516 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 16:25:14.927 DEBUG 15516 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 16:25:14.928  INFO 15516 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 16:25:18.358  WARN 15516 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 16:25:18.668  INFO 15516 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.289 seconds (JVM running for 10.407)
+2019-04-15 16:25:48.997 DEBUG 15516 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 16:25:49.161 DEBUG 15516 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
+2019-04-15 16:26:11.344  INFO 15560 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 15560 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 16:26:11.347 DEBUG 15560 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 16:26:11.347  INFO 15560 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 16:26:14.752  WARN 15560 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 16:26:15.042  INFO 15560 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.026 seconds (JVM running for 9.917)
+2019-04-15 16:26:24.631 DEBUG 15560 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 16:26:24.774 DEBUG 15560 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
