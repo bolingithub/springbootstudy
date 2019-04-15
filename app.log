@@ -178,3 +178,4 @@
 2019-04-15 16:26:15.042  INFO 15560 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.026 seconds (JVM running for 9.917)
 2019-04-15 16:26:24.631 DEBUG 15560 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
 2019-04-15 16:26:24.774 DEBUG 15560 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
+2019-04-15 16:27:26.901 DEBUG 15560 --- [http-nio-8080-exec-4] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
