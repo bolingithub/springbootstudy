@@ -197,14 +197,20 @@ public class UserService {
         if (!followUserExist) {
             throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "关注的用户不存在");
         }
-        boolean isFollowed = userFollowRepository.countByUserIdAndFollowId(userId, followId) > 0;
-        if (isFollowed) {
-            throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "已关注该用户，无需再次关注");
+        UserFollow userFollow = userFollowRepository.findByUserIdAndFollowId(userId, followId);
+        if (userFollow != null) {
+            if (userFollow.getStatus() == 0) {
+                throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "已关注该用户，无需再次关注");
+            } else {
+                throw new ServiceException(ServiceExceptionCode.USER_NO_REGISTER, "已拉黑该用户，请先解除拉黑");
+            }
+        } else {
+            UserFollow noUserFollow = new UserFollow();
+            noUserFollow.setUserId(userId);
+            noUserFollow.setFollowId(followId);
+            noUserFollow.setStatus(0);
+            userFollowRepository.save(noUserFollow);
         }
-        UserFollow userFollow = new UserFollow();
-        userFollow.setUserId(userId);
-        userFollow.setFollowId(followId);
-        userFollowRepository.save(userFollow);
     }
 
     /**
