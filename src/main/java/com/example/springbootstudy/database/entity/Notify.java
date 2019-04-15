@@ -19,6 +19,7 @@ public class Notify {
     private String userId;
     private String title;
     private String content;
+    private long type;
     private long status;
     private java.sql.Timestamp createTime;
 
@@ -56,6 +57,15 @@ public class Notify {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+
+    public long getType() {
+        return type;
+    }
+
+    public void setType(long type) {
+        this.type = type;
     }
 
 
