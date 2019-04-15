@@ -132,3 +132,28 @@
 2019-04-15 15:24:24.122  INFO 13078 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 4.003 seconds (JVM running for 9.984)
 2019-04-15 15:24:44.074 DEBUG 13078 --- [http-nio-8080-exec-1] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
 2019-04-15 15:24:44.231 DEBUG 13078 --- [http-nio-8080-exec-1] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20
+2019-04-15 15:58:50.605  WARN 13078 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m27s821ms).
+2019-04-15 16:11:38.306  INFO 14875 --- [main] c.e.s.SpringbootstudyApplication         : Starting SpringbootstudyApplication on bolins-mac-mini.local with PID 14875 (/Users/rapaq/IdeaProjects/springbootstudy/target/classes started by rapaq in /Users/rapaq/IdeaProjects/springbootstudy)
+2019-04-15 16:11:38.309 DEBUG 14875 --- [main] c.e.s.SpringbootstudyApplication         : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-15 16:11:38.310  INFO 14875 --- [main] c.e.s.SpringbootstudyApplication         : No active profile set, falling back to default profiles: default
+2019-04-15 16:11:42.990  WARN 14875 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-15 16:11:43.267  INFO 14875 --- [main] c.e.s.SpringbootstudyApplication         : Started SpringbootstudyApplication in 5.304 seconds (JVM running for 12.063)
+2019-04-15 16:13:15.496 DEBUG 14875 --- [http-nio-8080-exec-3] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 16:13:15.786 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 16:13:15.787 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 16:13:15.787 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/delSysNotify
+2019-04-15 16:13:15.788 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：565914682318127104;
+2019-04-15 16:13:15.789 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：42d13f16b7454ca69a208e684d9892dc;
+2019-04-15 16:13:15.789 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：Required Integer parameter 'notifyId' is not present
+2019-04-15 16:13:15.790 ERROR 14875 --- [http-nio-8080-exec-3] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 16:13:22.017 DEBUG 14875 --- [http-nio-8080-exec-4] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 16:13:44.192 DEBUG 14875 --- [http-nio-8080-exec-6] c.e.s.pretreatment.UserTokenInterceptor  : userId:1 token:2
+2019-04-15 16:13:44.207 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      :                               
+2019-04-15 16:13:44.209 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 16:13:44.210 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求地址：/notify/getSysNotify
+2019-04-15 16:13:44.210 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：userId -- 请求值：1;
+2019-04-15 16:13:44.210 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 请求参数：token -- 请求值：2;
+2019-04-15 16:13:44.211 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : 系统异常 -- 具体错误：用户认证信息错误，请重新登陆
+2019-04-15 16:13:44.211 ERROR 14875 --- [http-nio-8080-exec-6] c.e.s.error.ControllerAdviceHandler      : ------------------------------
+2019-04-15 16:13:51.153 DEBUG 14875 --- [http-nio-8080-exec-7] c.e.s.pretreatment.UserTokenInterceptor  : userId:565914682318127104 token:42d13f16b7454ca69a208e684d9892dc
+2019-04-15 16:13:51.162 DEBUG 14875 --- [http-nio-8080-exec-7] c.e.s.controller.UserController          : 请求系统通知 offset：0 limit：20

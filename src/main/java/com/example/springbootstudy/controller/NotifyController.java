@@ -36,4 +36,14 @@ public class NotifyController {
         List<Notify> notifyList = notifyRepository.findByUserIdAndTypeAndStatus(userId, 0, 0, limit, offset);
         return new ServiceResult<>(0, SUCCESS, notifyList);
     }
+
+    @GetMapping("delSysNotify")
+    ServiceResult<Void> delSysNotify(@RequestParam String userId, @RequestParam Integer notifyId) {
+        Notify notify = notifyRepository.findByIdAndUserId(notifyId, userId);
+        if (notify != null) {
+            notify.setStatus(2);
+            notifyRepository.save(notify);
+        }
+        return new ServiceResult<>(0, SUCCESS, null);
+    }
 }
